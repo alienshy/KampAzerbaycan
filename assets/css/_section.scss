@@ -1,0 +1,202 @@
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(189, 191, 166, 0.9),
+      rgba(189, 191, 166, 0.9)
+    ),
+    url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
+  background-size: cover;
+  padding: 100px;
+  .sectioncon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    .sectionimg {
+      width: 25%;
+      height: auto;
+      padding: 20px;
+      background-color: white;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .sectiontext {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      span {
+        display: flex;
+        gap: 20px;
+        h1 {
+          color: $colordarkgreen;
+          font-size: 60px;
+          font-family: "Lato", Sans-serif;
+        }
+        button {
+          width: 150px;
+          height: 75px;
+          border: none;
+          border-radius: 30px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+          }
+        }
+      }
+      h2 {
+        color: $colorgreen;
+        font-size: 90px;
+        width: 100%;
+        font-family: "Lato", Sans-serif;
+      }
+      p {
+        color: $colorgreen;
+        font-family: "Lato", Sans-serif;
+      }
+      .learn {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .bi-caret-right-fill {
+          font-size: 30px;
+          background-color: $colorgreen;
+          color: white;
+          padding: 10px;
+          border-radius: 999999px;
+          transition: 0.4s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        button {
+          padding: 20px 40px;
+          border: 1px dashed $colordarkgreen;
+          border-radius: 30px;
+          font-size: 20px;
+          display: flex;
+          color: $colorgreen;
+          gap: 10px;
+          transition: 0.4s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          i {
+            color: $colorgreen;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  section {
+    background-size: cover;
+    padding: 100px 10px;
+    .sectioncon {
+      padding: 100px 10px;
+      .sectionimg {
+        width: 40%;
+      }
+      .sectiontext {
+        width: 40%;
+        gap: 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section {
+    background-size: cover;
+    padding: 100px 10px;
+    .sectioncon {
+      flex-direction: column;
+      padding: 100px 10px;
+      .sectionimg {
+        width: 100%;
+        padding: 50px;
+      }
+      .sectiontext {
+        padding: 0 100px;
+        background-color: white;
+        width: 100%;
+        gap: 30px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    .sectioncon {
+      .sectiontext {
+        .sectiontext {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 20px;
+          span {
+            display: flex;
+            gap: 20px;
+          }
+          h2 {
+            color: $colorgreen;
+            font-size: 60px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+          }
+          p {
+            color: $colorgreen;
+            font-family: "Courier New", Courier, monospace;
+          }
+          .learn {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .bi-caret-right-fill {
+              font-size: 30px;
+              background-color: $colorgreen;
+              color: white;
+              padding: 10px;
+              border-radius: 999999px;
+              transition: 0.4s ease;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            button {
+              padding: 20px 2 0px;
+              border: 1px dashed $colordarkgreen;
+              border-radius: 30px;
+              font-size: 20px;
+              display: flex;
+              color: $colorgreen;
+              gap: 10px;
+              transition: 0.4s ease;
+              &:hover {
+                transform: scale(1.1);
+              }
+
+              i {
+                color: $colorgreen;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

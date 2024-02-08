@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url('../img/459213_adapted_landscape_2400x2400_1707135241.jpg');
+    background-size: cover;
+}
+.container{
+    padding: 0 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+
+///color
+$colordarkgreen:#333D29;
+$colorgreen:#475d01;    
+$colorlightgreen:#66b400;
+$colorbgcolor:#BCBEA6;
+$colorimgborder:#F0EAD2;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin spacebetween {
+   display: flex;
+   justify-content: space-between;
+   align-items:center;    
+}
+
+
+
+@import './nav';
+@import './login';
+@import './section';
+@import './main';
+
+
+
+
+
+
+
+

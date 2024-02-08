@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
+  background-size: cover;
+}
+
+.container {
+  padding: 0 32px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav div div {
+  width: 70px;
+  height: 70px;
+}
+nav div div img {
+  width: 100%;
+  height: 100%;
+}
+nav div h1 {
+  font-family: "Lato", Sans-serif;
+  font-weight: 900;
+  color: #66b400;
+  font-size: 23px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  gap: 22px;
+}
+nav ul a {
+  color: #475d01;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  transition: 0.4s ease;
+}
+nav ul a:hover {
+  color: #66b400;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+}
+nav .icons i {
+  color: #475d01;
+  font-size: 25px;
+  transition: 0.4s ease;
+}
+nav .icons i:hover {
+  color: #66b400;
+}
+nav .bi-list {
+  color: white;
+  display: none;
+  font-size: 35px;
+  border: 2px solid #475d01;
+  border-radius: 10px;
+  background-color: #66b400;
+  transition: 0.4s ease;
+}
+nav .bi-list:hover {
+  color: #66b400;
+  background-color: white;
+}
+nav menu {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.4);
+  right: 0px;
+  left: 0;
+  padding: 70px;
+  gap: 55px;
+  z-index: 100;
+  transition: all 0.4s ease;
+}
+nav menu .bi-x {
+  position: absolute;
+  color: #475d01;
+  font-size: 55px;
+  top: 1px;
+  right: 1px;
+  transition: 0.4s ease;
+}
+nav menu .bi-x:hover {
+  color: #66b400;
+}
+nav menu a {
+  color: #475d01;
+  font-size: 25px;
+  font-family: "Lato", Sans-serif;
+  font-weight: 800;
+  transition: 0.4s ease;
+}
+nav menu a:hover {
+  color: #66b400;
+}
+nav menu div {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+}
+nav menu div i {
+  color: #475d01;
+  font-size: 35px;
+  transition: all 0.4s ease;
+}
+nav menu div i:hover {
+  color: #66b400;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    padding: 20px 30px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .icons {
+    display: none;
+  }
+  nav .bi-list {
+    display: flex;
+    border: none;
+  }
+  nav menu {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  nav menu .bi-x {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    color: white;
+    font-size: 37px;
+    border: none;
+    border-radius: 13px;
+    background-color: #66b400;
+    transition: 0.4s ease;
+  }
+  nav menu .bi-x:hover {
+    color: #66b400;
+    background-color: white;
+  }
+}
+nav menu.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.loginsection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginsection form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 20px;
+}
+.loginsection form label {
+  color: black;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
+  background-size: cover;
+  padding: 100px;
+}
+section .sectioncon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+section .sectioncon .sectionimg {
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+}
+section .sectioncon .sectionimg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+section .sectioncon .sectiontext {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+section .sectioncon .sectiontext span {
+  display: flex;
+  gap: 20px;
+}
+section .sectioncon .sectiontext span h1 {
+  color: #333D29;
+  font-size: 60px;
+  font-family: "Lato", Sans-serif;
+}
+section .sectioncon .sectiontext span button {
+  width: 150px;
+  height: 75px;
+  border: none;
+  border-radius: 30px;
+}
+section .sectioncon .sectiontext span button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+section .sectioncon .sectiontext h2 {
+  color: #475d01;
+  font-size: 90px;
+  width: 100%;
+  font-family: "Lato", Sans-serif;
+}
+section .sectioncon .sectiontext p {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+section .sectioncon .sectiontext .learn {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .sectioncon .sectiontext .learn .bi-caret-right-fill {
+  font-size: 30px;
+  background-color: #475d01;
+  color: white;
+  padding: 10px;
+  border-radius: 999999px;
+  transition: 0.4s ease;
+}
+section .sectioncon .sectiontext .learn .bi-caret-right-fill:hover {
+  transform: scale(1.1);
+}
+section .sectioncon .sectiontext .learn button {
+  padding: 20px 40px;
+  border: 1px dashed #333D29;
+  border-radius: 30px;
+  font-size: 20px;
+  display: flex;
+  color: #475d01;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+section .sectioncon .sectiontext .learn button:hover {
+  transform: scale(1.1);
+}
+section .sectioncon .sectiontext .learn button i {
+  color: #475d01;
+}
+
+@media screen and (max-width: 1300px) {
+  section {
+    background-size: cover;
+    padding: 100px 10px;
+  }
+  section .sectioncon {
+    padding: 100px 10px;
+  }
+  section .sectioncon .sectionimg {
+    width: 40%;
+  }
+  section .sectioncon .sectiontext {
+    width: 40%;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section {
+    background-size: cover;
+    padding: 100px 10px;
+  }
+  section .sectioncon {
+    flex-direction: column;
+    padding: 100px 10px;
+  }
+  section .sectioncon .sectionimg {
+    width: 100%;
+    padding: 50px;
+  }
+  section .sectioncon .sectiontext {
+    padding: 0 100px;
+    background-color: white;
+    width: 100%;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .sectioncon .sectiontext .sectiontext {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  section .sectioncon .sectiontext .sectiontext span {
+    display: flex;
+    gap: 20px;
+  }
+  section .sectioncon .sectiontext .sectiontext h2 {
+    color: #475d01;
+    font-size: 60px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  section .sectioncon .sectiontext .sectiontext p {
+    color: #475d01;
+    font-family: "Courier New", Courier, monospace;
+  }
+  section .sectioncon .sectiontext .sectiontext .learn {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section .sectioncon .sectiontext .sectiontext .learn .bi-caret-right-fill {
+    font-size: 30px;
+    background-color: #475d01;
+    color: white;
+    padding: 10px;
+    border-radius: 999999px;
+    transition: 0.4s ease;
+  }
+  section .sectioncon .sectiontext .sectiontext .learn .bi-caret-right-fill:hover {
+    transform: scale(1.1);
+  }
+  section .sectioncon .sectiontext .sectiontext .learn button {
+    padding: 20px 2 0px;
+    border: 1px dashed #333D29;
+    border-radius: 30px;
+    font-size: 20px;
+    display: flex;
+    color: #475d01;
+    gap: 10px;
+    transition: 0.4s ease;
+  }
+  section .sectioncon .sectiontext .sectiontext .learn button:hover {
+    transform: scale(1.1);
+  }
+  section .sectioncon .sectiontext .sectiontext .learn button i {
+    color: #475d01;
+  }
+}
+main {
+  width: 100%;
+  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
+  padding: 100px 0px;
+  background-size: cover;
+}
+main h1 {
+  color: #333D29;
+  font-size: 60px;
+  font-family: "Lato", Sans-serif;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+main p {
+  color: #475d01;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lato", Sans-serif;
+}
+main #maincon {
+  padding: 40px 202px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main #maincon .cards {
+  flex: 1 1 calc(33% - 25px);
+  max-width: calc(33% - 25px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  gap: 10px;
+}
+main #maincon .cards .cardsimg {
+  width: 100%;
+  height: 200px;
+}
+main #maincon .cards .cardsimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #maincon .cards h3 {
+  color: #475d01;
+  font-size: 40px;
+}
+main #maincon .cards span {
+  display: flex;
+  gap: 10px;
+}
+main #maincon .cards span i {
+  color: #475d01;
+  font-size: 30px;
+}
+main #maincon .cards span h4 {
+  color: #475d01;
+  font-weight: 100;
+  font-size: 30px;
+}
+main #maincon .cards iframe {
+  border: 1px dashed #333D29;
+  border-radius: 20px;
+}
+main #maincon .cards button {
+  padding: 10px;
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #333D29;
+  border-radius: 30px;
+  font-size: 20px;
+  display: flex;
+  color: #475d01;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+main #maincon .cards button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
