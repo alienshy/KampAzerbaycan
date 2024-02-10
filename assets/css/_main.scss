@@ -6,8 +6,11 @@ main {
     ),
     url("/assets/img/01-Converted-01.png");
   padding: 100px 0px;
-  background-size: cover;
-  h1{
+  clip-path: polygon(33% 0, 52% 9%, 68% 0, 85% 8%, 100% 0, 100% 100%, 63% 100%, 0 100%, 0 0, 16% 6%);
+z-index: 1000;
+  background-size:contain;  
+  padding-top: 300px;
+  h1 {
     color: $colordarkgreen;
     font-size: 60px;
     font-family: "Lato", Sans-serif;
@@ -22,9 +25,10 @@ main {
     font-family: "Lato", Sans-serif;
   }
   #maincon {
-    padding: 40px 202px;
     display: flex;
+    padding: 100px 32px;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 25px;
     .cards {
       flex: 1 1 calc(33% - 25px);
@@ -61,29 +65,48 @@ main {
           font-weight: 100;
           font-size: 30px;
         }
-      
-      }  
-      iframe{
+      }
+      iframe {
         border: 1px dashed $colordarkgreen;
         border-radius: 20px;
-    }
-      button{
-            padding: 10px;
-            display: flex;
-            width: 170px;
-            align-items:center;
-            justify-content: center;
-            border: 1px dashed $colordarkgreen;
-            border-radius: 30px;
-            font-size: 20px;
-            display: flex;
-            color: $colorgreen;
-            gap: 10px;
-            transition: 0.4s ease;
-            &:hover {
-              transform: scale(1.1);
-            }
+      }
+      button {
+        padding: 10px;
+        display: flex;
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed $colordarkgreen;
+        border-radius: 30px;
+        font-size: 20px;
+        display: flex;
+        color: $colorgreen;
+        gap: 10px;
+        transition: 0.4s ease;
+        &:hover {
+          transform: scale(1.1);
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  main {
+    #maincon {
+      .cards {
+        flex: 1 1 calc(50% - 25px);
+        max-width: calc(50% - 25px);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    #maincon {
+      .cards {
+        flex: 1 1 calc(100%);
+        max-width: 100%;
+      }
     }
   }
 }

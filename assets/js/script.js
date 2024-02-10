@@ -52,7 +52,7 @@ async function getall(){
     filter = filter.length || (search && search.value) ? filter : data;
 filter.forEach(element => {
     card.innerHTML+=`
-    <div class="${element.id}">
+    <div class="cards">
     <div class="cardsimg">
       <img src="${element.img}" alt=""/>
     </div>

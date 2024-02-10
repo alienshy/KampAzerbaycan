@@ -4,15 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
-  background-size: cover;
-}
-
 .container {
   padding: 0 32px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 a {
@@ -183,6 +178,7 @@ nav menu.show {
 .loginsection {
   width: 100%;
   height: 100vh;
+  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +198,8 @@ section {
   min-height: 100vh;
   background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
   background-size: cover;
-  padding: 100px;
+  padding: 100px 50px 200px;
+  margin-bottom: -100px;
 }
 section .sectioncon {
   width: 100%;
@@ -213,8 +210,8 @@ section .sectioncon {
   padding-top: 100px;
 }
 section .sectioncon .sectionimg {
-  width: 25%;
-  height: auto;
+  width: 350px;
+  height: 500px;
   padding: 20px;
   background-color: white;
 }
@@ -227,12 +224,14 @@ section .sectioncon .sectionimg img {
 section .sectioncon .sectiontext {
   width: 40%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
 section .sectioncon .sectiontext span {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
 }
 section .sectioncon .sectiontext span h1 {
@@ -240,23 +239,9 @@ section .sectioncon .sectiontext span h1 {
   font-size: 60px;
   font-family: "Lato", Sans-serif;
 }
-section .sectioncon .sectiontext span button {
-  width: 150px;
-  height: 75px;
-  border: none;
-  border-radius: 30px;
-}
-section .sectioncon .sectiontext span button img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 30px;
-}
-section .sectioncon .sectiontext h2 {
+section .sectioncon .sectiontext span h2 {
   color: #475d01;
   font-size: 90px;
-  width: 100%;
   font-family: "Lato", Sans-serif;
 }
 section .sectioncon .sectiontext p {
@@ -264,10 +249,11 @@ section .sectioncon .sectiontext p {
   font-family: "Lato", Sans-serif;
 }
 section .sectioncon .sectiontext .learn {
-  width: 70%;
+  width: 100%;
+  gap: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
 }
 section .sectioncon .sectiontext .learn .bi-caret-right-fill {
   font-size: 30px;
@@ -281,7 +267,7 @@ section .sectioncon .sectiontext .learn .bi-caret-right-fill:hover {
   transform: scale(1.1);
 }
 section .sectioncon .sectiontext .learn button {
-  padding: 20px 40px;
+  padding: 20px;
   border: 1px dashed #333D29;
   border-radius: 30px;
   font-size: 20px;
@@ -297,103 +283,59 @@ section .sectioncon .sectiontext .learn button i {
   color: #475d01;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 992px) {
   section {
-    background-size: cover;
-    padding: 100px 10px;
+    padding: 0px;
   }
   section .sectioncon {
-    padding: 100px 10px;
-  }
-  section .sectioncon .sectionimg {
-    width: 40%;
-  }
-  section .sectioncon .sectiontext {
-    width: 40%;
-    gap: 50px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  section {
-    background-size: cover;
-    padding: 100px 10px;
-  }
-  section .sectioncon {
-    flex-direction: column;
-    padding: 100px 10px;
-  }
-  section .sectioncon .sectionimg {
-    width: 100%;
-    padding: 50px;
-  }
-  section .sectioncon .sectiontext {
-    padding: 0 100px;
-    background-color: white;
-    width: 100%;
     gap: 30px;
-    padding-bottom: 60px;
+    width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
-  section .sectioncon .sectiontext .sectiontext {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  section .sectioncon .sectionimg {
+    padding: 0px;
+    margin-top: -100px;
+    width: 100%;
+  }
+  section .sectioncon .sectiontext {
+    width: 100%;
+    padding: 30px;
+    width: 100%;
+  }
+  section .sectioncon .sectiontext span {
+    width: 100%;
+    justify-content: start;
     gap: 20px;
   }
-  section .sectioncon .sectiontext .sectiontext span {
-    display: flex;
-    gap: 20px;
-  }
-  section .sectioncon .sectiontext .sectiontext h2 {
-    color: #475d01;
+  section .sectioncon .sectiontext span h1 {
     font-size: 60px;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
-  section .sectioncon .sectiontext .sectiontext p {
-    color: #475d01;
-    font-family: "Courier New", Courier, monospace;
+  section .sectioncon .sectiontext span h2 {
+    font-size: 60px;
   }
-  section .sectioncon .sectiontext .sectiontext .learn {
-    width: 70%;
+  section .sectioncon .sectiontext span .learn {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 0px;
   }
-  section .sectioncon .sectiontext .sectiontext .learn .bi-caret-right-fill {
-    font-size: 30px;
-    background-color: #475d01;
-    color: white;
+  section .sectioncon .sectiontext span .learn button {
     padding: 10px;
-    border-radius: 999999px;
-    transition: 0.4s ease;
+    width: 170px;
   }
-  section .sectioncon .sectiontext .sectiontext .learn .bi-caret-right-fill:hover {
+  section .sectioncon .sectiontext span .learn button:hover {
     transform: scale(1.1);
-  }
-  section .sectioncon .sectiontext .sectiontext .learn button {
-    padding: 20px 2 0px;
-    border: 1px dashed #333D29;
-    border-radius: 30px;
-    font-size: 20px;
-    display: flex;
-    color: #475d01;
-    gap: 10px;
-    transition: 0.4s ease;
-  }
-  section .sectioncon .sectiontext .sectiontext .learn button:hover {
-    transform: scale(1.1);
-  }
-  section .sectioncon .sectiontext .sectiontext .learn button i {
-    color: #475d01;
   }
 }
 main {
   width: 100%;
   background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
   padding: 100px 0px;
-  background-size: cover;
+  -webkit-clip-path: polygon(33% 0, 52% 9%, 68% 0, 85% 8%, 100% 0, 100% 100%, 63% 100%, 0 100%, 0 0, 16% 6%);
+          clip-path: polygon(33% 0, 52% 9%, 68% 0, 85% 8%, 100% 0, 100% 100%, 63% 100%, 0 100%, 0 0, 16% 6%);
+  z-index: 1000;
+  background-size: contain;
+  padding-top: 300px;
 }
 main h1 {
   color: #333D29;
@@ -410,9 +352,10 @@ main p {
   font-family: "Lato", Sans-serif;
 }
 main #maincon {
-  padding: 40px 202px;
   display: flex;
+  padding: 100px 32px;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 25px;
 }
 main #maincon .cards {
@@ -472,4 +415,17 @@ main #maincon .cards button {
 }
 main #maincon .cards button:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+  main #maincon .cards {
+    flex: 1 1 calc(50% - 25px);
+    max-width: calc(50% - 25px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  main #maincon .cards {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
