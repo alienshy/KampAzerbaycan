@@ -175,7 +175,7 @@ nav menu.show {
   pointer-events: auto;
 }
 
-.loginsection {
+#login-form {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
@@ -183,13 +183,13 @@ nav menu.show {
   justify-content: center;
   align-items: center;
 }
-.loginsection form {
+#login-form .form2 {
   display: flex;
   flex-direction: column;
   width: 300px;
   gap: 20px;
 }
-.loginsection form label {
+#login-form .form2 label {
   color: black;
 }
 
@@ -428,4 +428,25 @@ main #maincon .cards button:hover {
     flex: 1 1 100%;
     max-width: 100%;
   }
+}
+#register-form {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#register-form h2 {
+  font-size: 40px;
+  text-align: center;
+}
+#register-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,19 @@
-function register() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+let url = "http://localhost:3000/user";
+let name = document.querySelector("#name");
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let form1 = document.querySelector(".form1");
 
-    const user = { name, email, password };
-    const userJson = JSON.stringify(user);
+form1.addEventListener("submit", (e) => {
+  e.preventDefault();
+  axios.post(url, {
+    title: name.value,
+    email: email.value,
+    password: password.value,
+    fav: [],
+  });
+  window.location = "./login.htm";
 
-    console.log('Registered user:', userJson);
+});
 
-    // Burada kayıt işleminden sonra, istediğiniz sayfaya yönlendirebilirsiniz.
-    // Örneğin, ana sayfaya yönlendirebilirsiniz:
-    // window.location.href = "index.html";
-}
+

@@ -1,22 +1,37 @@
-function login() {
-    const loginEmail = document.getElementById('loginEmail').value;
-    const loginPassword = document.getElementById('loginPassword').value;
+let user = localStorage.getItem('currentUser');
+let form2 = document.querySelector(".form2");
 
-    // Bu noktada, kayıtlı kullanıcıları içeren bir veritabanını kontrol edebilirsiniz.
-    // Örneğin, daha önce kaydedilen kullanıcı bilgilerini içeren bir JSON nesnesi varsa,
-    // bu bilgileri kontrol edebilirsiniz.
+form2.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    // Örneğin:
-    const storedUserJson = '{"name":"John Doe","email":"john@example.com","password":"password123"}';
+    let email = document.querySelector("#loginEmail").value;
+    let password = document.querySelector("#loginPassword").value;
 
-    const storedUser = JSON.parse(storedUserJson);
+    fetch('http://localhost:3000/user')
+        .then(res => {
+            if (res.ok) {
+                return res.json();
+            } else {
+                throw new Error('Kullanıcı verileri getirilemedi');
+            }
+        })
+        .then(data => {
+            let currentUserInfo = data.find((userData) => email === userData.email);
 
-    if (loginEmail === storedUser.email && loginPassword === storedUser.password) {
-        alert('Login successful!');
-        // Burada giriş başarılıysa, istediğiniz işlemleri gerçekleştirebilirsiniz.
-        // Örneğin, ana sayfaya yönlendirebilirsiniz.
-        // window.location.href = "index.html";
-    } else {
-        alert('Invalid email or password. Please try again.');
-    }
-}
+
+            if (currentUserInfo) {
+                if (currentUserInfo.password === password) {
+                    localStorage.setItem('currentUser', JSON.stringify(currentUserInfo));
+                    window.location = "./index.htm";
+                } else {
+                    alert("Şifre yanlış");
+                }
+            } else {
+                alert("Kullanıcı bulunamadı");
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+        });
+});
