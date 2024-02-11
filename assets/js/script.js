@@ -70,56 +70,15 @@ filter.forEach(element => {
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
-    <button>
-   <a href="./details.htm?id=${element.id} class="details"><i  class="bi bi-arrow-right-circle-fill"></i>Learn More </a>
-    </button>
+   <a href="./details.htm?id=${element.id} class="details"> <button>
+   <i  class="bi bi-arrow-right-circle-fill"></i>Learn More 
+    </button></a>
   </div>
     `
 });
 }
 getall()
 
-
-
-function login() {
-  const loginEmail = document.getElementById('loginEmail').value;
-  const loginPassword = document.getElementById('loginPassword').value;
-
-  // Bu noktada, kayıtlı kullanıcıları içeren bir veritabanını kontrol edebilirsiniz.
-  // Örneğin, daha önce kaydedilen kullanıcı bilgilerini içeren bir JSON nesnesi varsa,
-  // bu bilgileri kontrol edebilirsiniz.
-
-  // Örneğin:
-  const storedUserJson = '{"name":"John Doe","email":"john@example.com","password":"password123"}';
-
-  const storedUser = JSON.parse(storedUserJson);
-
-  if (loginEmail === storedUser.email && loginPassword === storedUser.password) {
-      alert('Login successful!');
-      // Burada giriş başarılıysa, istediğiniz işlemleri gerçekleştirebilirsiniz.
-      // Örneğin, ana sayfaya yönlendirebilirsiniz.
-      // window.location.href = "index.html";
-  } else {
-      alert('Invalid email or password. Please try again.');
-  }
-}
-
-
-
-function register() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-
-  const user = { name, email, password };
-  const userJson = JSON.stringify(user);
-
-  console.log('Registered user:', userJson);
-
-  // Burada kayıt işleminden sonra, istediğiniz sayfaya yönlendirebilirsiniz.
-  // Örneğin, ana sayfaya yönlendirebilirsiniz:
-  // window.location.href = "index.html";
-}
 
 let gir = document.querySelector(".gir");
 let qeyd = document.querySelector(".qeyd");
@@ -133,7 +92,15 @@ if(user){
   logout.style.display = "block";
   person.style.display = "block"
   qeyd.style.display = "none";
+  gir.style.position = "absolute";
+  gir.style.right = "200px";
+  gir.style.top = "100px";
 }
+function changeFontSize(size) {
+  document.getElementById.gir.style.fontSize = size - 'px';
+}
+changeFontSize(4);
+
 
 
 logout.addEventListener("click",()=>{

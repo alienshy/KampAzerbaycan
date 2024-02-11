@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     
 }
 .container{
@@ -12,12 +13,14 @@
 a{
     text-decoration: none;
 }
-
+body{
+    background-color:#eaeccd;
+}
 ///color
 $colordarkgreen:#333D29;
 $colorgreen:#475d01;    
 $colorlightgreen:#66b400;
-$colorbgcolor:#BCBEA6;
+$colorbgcolor:#eaeccd;
 $colorimgborder:#F0EAD2;
 
 @mixin center {
@@ -42,6 +45,14 @@ $colorimgborder:#F0EAD2;
 @import './section';
 @import './main';
 @import './singup';
+@import './user';
+@import './attacment';
+@import './luks';
+@import './havefun';
+@import './footer';
+
+
+
 
 
 

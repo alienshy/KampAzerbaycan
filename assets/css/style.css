@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #eaeccd;
+}
+
 nav {
   padding: 20px 30px;
   width: 100%;
@@ -199,7 +203,6 @@ section {
   background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
   background-size: cover;
   padding: 100px 50px 200px;
-  margin-bottom: -100px;
 }
 section .sectioncon {
   width: 100%;
@@ -330,12 +333,10 @@ section .sectioncon .sectiontext .learn button i {
 main {
   width: 100%;
   background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
-  padding: 100px 0px;
-  -webkit-clip-path: polygon(33% 0, 52% 9%, 68% 0, 85% 8%, 100% 0, 100% 100%, 63% 100%, 0 100%, 0 0, 16% 6%);
-          clip-path: polygon(33% 0, 52% 9%, 68% 0, 85% 8%, 100% 0, 100% 100%, 63% 100%, 0 100%, 0 0, 16% 6%);
-  z-index: 1000;
   background-size: contain;
-  padding-top: 300px;
+  padding: 100px 20px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
 }
 main h1 {
   color: #333D29;
@@ -424,6 +425,10 @@ main #maincon .cards button:hover {
   }
 }
 @media only screen and (max-width: 768px) {
+  main {
+    -webkit-clip-path: polygon(38% 2%, 63% 4%, 88% 0, 100% 0, 100% 100%, 0 100%, 0 0, 15% 0);
+            clip-path: polygon(38% 2%, 63% 4%, 88% 0, 100% 0, 100% 100%, 0 100%, 0 0, 15% 0);
+  }
   main #maincon .cards {
     flex: 1 1 100%;
     max-width: 100%;
@@ -449,4 +454,378 @@ main #maincon .cards button:hover {
   flex-direction: column;
   gap: 20px;
   width: 300px;
+}
+
+.usersection {
+  width: 100%;
+  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
+  background-size: contain;
+  padding: 150px 32px;
+}
+.usersection .usertable {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+  gap: 30px;
+}
+.usersection .usertable a {
+  font-size: 90px;
+  color: #475d01;
+}
+.usersection .usertable a .presonuser {
+  font-size: 50px;
+}
+
+.attacment {
+  width: 100%;
+  background: linear-gradient(rgba(112, 122, 67, 0.4), rgba(112, 132, 74, 0.4)), url("../img/Image-13.jpg");
+  padding: 200px 32px 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+}
+.attacment h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Lato", Sans-serif;
+}
+.attacment p {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  font-family: "Lato", Sans-serif;
+}
+.attacment button {
+  padding: 10px;
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #333D29;
+  border-radius: 30px;
+  font-size: 20px;
+  display: flex;
+  color: #475d01;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+.attacment button:hover {
+  transform: scale(1.1);
+}
+
+.luks {
+  width: 100%;
+  background-color: #eaeccd;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
+}
+.luks .span1 {
+  display: flex;
+  gap: 10px;
+}
+.luks .span1 h1 {
+  color: #333D29;
+  font-size: 40px;
+  font-family: "Lato", Sans-serif;
+}
+.luks .span1 h2 {
+  color: #475d01;
+  font-size: 40px;
+  font-family: "Lato", Sans-serif;
+}
+.luks p {
+  color: gray;
+  font-size: 20px;
+  font-family: "Lato", Sans-serif;
+}
+.luks .lukscon {
+  width: 100%;
+  padding: 50px 102px 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.luks .lukscon .luksdiv {
+  padding: 20px;
+  background-color: white;
+  max-width: calc(33% - 20px);
+  flex: 1 1 calc(33% - 20px);
+  border-radius: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.luks .lukscon .luksdiv .divimg {
+  width: 100%;
+  height: 250px;
+}
+.luks .lukscon .luksdiv .divimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.luks .lukscon .luksdiv .star {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.luks .lukscon .luksdiv .star h1 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+.luks .lukscon .luksdiv .star span {
+  display: flex;
+  gap: 2px;
+}
+.luks .lukscon .luksdiv .star span i {
+  color: rgb(255, 221, 0);
+  font-size: 20px;
+}
+.luks .lukscon .luksdiv .span2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.luks .lukscon .luksdiv .span2 i {
+  font-size: 26px;
+  color: #475d01;
+}
+.luks .lukscon .luksdiv .span2 h4 {
+  color: #475d01;
+}
+.luks .lukscon .luksdiv .span3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.luks .lukscon .luksdiv .span3 p {
+  color: #333D29;
+}
+.luks .lukscon .luksdiv .span3 i {
+  color: red;
+}
+.luks .lukscon .luksdiv a button {
+  padding: 10px;
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #333D29;
+  border-radius: 30px;
+  font-size: 20px;
+  display: flex;
+  color: #475d01;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+.luks .lukscon .luksdiv a button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .luks {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 61% 99%, 21% 98%, 0 100%, 0 0);
+            clip-path: polygon(100% 0, 100% 100%, 61% 99%, 21% 98%, 0 100%, 0 0);
+  }
+  .luks .lukscon .luksdiv {
+    flex: 1 1 calc(50% - 25px);
+    max-width: calc(50% - 25px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .luks {
+    gap: 20px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 61% 99%, 21% 98%, 0 100%, 0 0);
+            clip-path: polygon(100% 0, 100% 100%, 61% 99%, 21% 98%, 0 100%, 0 0);
+  }
+  .luks .span1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .luks .lukscon {
+    padding: 50px 40px 300px;
+  }
+  .luks .lukscon .luksdiv {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.havefun {
+  -webkit-clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+          clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+  width: 100%;
+}
+.havefun .havefuncon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 200px 152px 100px;
+}
+.havefun .havefuncon .havefuntext {
+  background-color: white;
+  max-width: calc(33% - 20px);
+  flex: 1 1 calc(33% - 20px);
+  display: flex;
+  padding: 40px 30px;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: inset;
+  gap: 20px;
+  border-bottom: 3px dashed #475d01;
+}
+.havefun .havefuncon .havefuntext h1 {
+  font-size: 45px;
+  width: 100%;
+  color: #333D29;
+  font-family: "Lato", Sans-serif;
+}
+.havefun .havefuncon .havefuntext span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.havefun .havefuncon .havefuntext span i {
+  font-size: 20px;
+  color: #475d01;
+}
+.havefun .havefuncon .havefuntext span h4 {
+  font-size: 17px;
+  color: #333D29;
+}
+.havefun .havefuncon .havefuntext button {
+  padding: 10px;
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #333D29;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  color: #475d01;
+  background-color: #F0EAD2;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+.havefun .havefuncon .havefuntext button:hover {
+  transform: scale(1.1);
+}
+.havefun .havefuncon .fishing {
+  background-color: white;
+  max-width: calc(33% - 20px);
+  flex: 1 1 calc(33% - 20px);
+  display: flex;
+  padding: 50px 30px;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: inset;
+  align-items: flex-start;
+  border-bottom: 3px dashed #475d01;
+}
+.havefun .havefuncon .fishing button {
+  padding: 10px;
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  cursor: pointer;
+  color: #475d01;
+  background-color: transparent;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+.havefun .havefuncon .fishing button:hover {
+  transform: scale(1.1);
+}
+.havefun .havefuncon .fishing .imgicon1 {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+.havefun .havefuncon .fishing .imgicon1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease;
+}
+.havefun .havefuncon .fishing .imgicon1 img:hover {
+  transform: scale(1.1);
+}
+.havefun .havefuncon .fishing h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+.havefun .havefuncon .fishing p {
+  color: #333D29;
+  font-family: "Lato", Sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .havefun .havefuncon {
+    padding: 200px 52px 100px;
+  }
+  .havefun .havefuncon .havefuntext {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+  }
+  .havefun .havefuncon .fishing {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .havefun .havefuncon {
+    padding: 200px 52px 100px;
+  }
+  .havefun .havefuncon .havefuntext {
+    max-width: calc(100% - 20px);
+    flex: 1 1 calc(100% - 20px);
+  }
+  .havefun .havefuncon .fishing {
+    max-width: calc(100% - 20px);
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+footer {
+  width: 100%;
+  -webkit-clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+          clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+}
+footer .footercon {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

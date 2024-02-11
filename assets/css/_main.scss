@@ -5,11 +5,10 @@ main {
       rgba(189, 191, 166, 0.9)
     ),
     url("/assets/img/01-Converted-01.png");
-  padding: 100px 0px;
-  clip-path: polygon(33% 0, 52% 9%, 68% 0, 85% 8%, 100% 0, 100% 100%, 63% 100%, 0 100%, 0 0, 16% 6%);
-z-index: 1000;
   background-size:contain;  
-  padding-top: 300px;
+  padding: 100px 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
+
   h1 {
     color: $colordarkgreen;
     font-size: 60px;
@@ -92,7 +91,9 @@ z-index: 1000;
 }
 @media only screen and (max-width: 1200px) {
   main {
+
     #maincon {
+
       .cards {
         flex: 1 1 calc(50% - 25px);
         max-width: calc(50% - 25px);
@@ -102,6 +103,8 @@ z-index: 1000;
 }
 @media only screen and (max-width: 768px) {
   main {
+    clip-path: polygon(38% 2%, 63% 4%, 88% 0, 100% 0, 100% 100%, 0 100%, 0 0, 15% 0);
+
     #maincon {
       .cards {
         flex: 1 1 calc(100%);

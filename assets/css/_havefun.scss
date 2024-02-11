@@ -1,0 +1,152 @@
+.havefun {
+        clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+      width: 100%;
+  .havefuncon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 200px 152px 100px;
+    .havefuntext{
+        background-color: white;
+        max-width: calc(33% - 20px);
+        flex: 1 1 calc(33% - 20px);
+        display: flex;
+        padding: 40px 30px;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: inset;
+        gap: 20px;
+        border-bottom: 3px dashed $colorgreen;  
+        h1{
+        font-size: 45px;
+        width: 100%;
+        color:$colordarkgreen;
+        font-family: "Lato", Sans-serif;
+      } 
+       span{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+        i{
+            font-size: 20px;
+            color:$colorgreen;
+        }
+        h4{
+            font-size: 17px;
+            color:$colordarkgreen;
+        }
+      }
+      button {
+        padding: 10px;
+        display: flex;
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed $colordarkgreen;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        color: $colorgreen;
+        background-color:$colorimgborder;
+        gap: 10px;
+        transition: 0.4s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .fishing {
+      background-color: white;
+      max-width: calc(33% - 20px);
+      flex: 1 1 calc(33% - 20px);
+      display: flex;
+      padding: 50px 30px;
+      flex-direction: column;
+      border-radius: 20px;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: inset;
+      align-items:flex-start;
+      border-bottom: 3px dashed $colorgreen;
+
+      button {
+        padding: 10px;
+        display: flex;
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        border:none;
+        font-size: 20px;
+        display: flex;
+        cursor: pointer;
+        color: $colorgreen;
+        background-color:transparent;
+        gap: 10px;
+        transition: 0.4s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    
+      .imgicon1 {    
+        width: 100px;
+        height: 100px;
+        border:none;
+       
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius:9999999px;
+          object-fit: cover; 
+          transition: all 0.4s ease;
+          &:hover{
+            transform: scale(1.1);
+
+          }
+        }
+      }
+      h2 {
+        color: $colorgreen;
+        font-family: "Lato", Sans-serif;
+      }
+      p {
+        color: $colordarkgreen;
+        font-family: "Lato", Sans-serif;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+    .havefun {
+        .havefuncon {
+          padding: 200px 52px 100px;
+          .havefuntext{
+              max-width: calc(50% - 20px);
+              flex: 1 1 calc(50% - 20px);
+          }
+          .fishing {
+            max-width: calc(50% - 20px);
+            flex: 1 1 calc(50% - 20px);
+          }
+        }
+      }
+  }
+  @media only screen and (max-width: 768px) {
+    .havefun {
+        .havefuncon {
+          padding: 200px 52px 100px;
+          .havefuntext{
+              max-width: calc(100% - 20px);
+              flex: 1 1 calc(100% - 20px);
+          }
+          .fishing {
+            max-width: calc(100% - 20px);
+            flex: 1 1 calc(100% - 20px);
+          }
+        }
+      }
+  }

@@ -1,0 +1,150 @@
+.luks {
+  width: 100%;
+  background-color: $colorbgcolor;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
+
+  .span1 {
+    display: flex;
+    gap: 10px;
+    h1 {
+      color: $colordarkgreen;
+      font-size: 40px;
+      font-family: "Lato", Sans-serif;
+    }
+    h2 {
+      color: $colorgreen;
+      font-size: 40px;
+      font-family: "Lato", Sans-serif;
+    }
+  }
+  p {
+    color: gray;
+    font-size: 20px;
+    font-family: "Lato", Sans-serif;
+  }
+  .lukscon {
+    width: 100%;
+    padding: 50px 102px 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    .luksdiv {
+      padding: 20px;
+      background-color: white;
+      max-width: calc(33% - 20px);
+      flex: 1 1 calc(33% - 20px);
+      border-radius: 20px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      .divimg {
+        width: 100%;
+        height: 250px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .star {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          color: $colorgreen;
+          font-family: "Lato", Sans-serif;
+        }
+        span {
+          display: flex;
+          gap: 2px;
+          i {
+            color: rgb(255, 221, 0);
+            font-size: 20px;
+          }
+        }
+      }
+
+      .span2 {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        i {
+          font-size: 26px;
+          color: $colorgreen;
+        }
+        h4 {
+          color: $colorgreen;
+        }
+      }
+      .span3{
+        width: 100%;
+        display: flex;
+        align-items:center;
+        gap: 5px;
+        p{
+            color:$colordarkgreen;
+        }
+        i{
+            color:red;
+        }
+      }
+      a{
+        button {
+            padding: 10px;
+            display: flex;
+            width: 170px;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed $colordarkgreen;
+            border-radius: 30px;
+            font-size: 20px;
+            display: flex;
+            color: $colorgreen;
+            gap: 10px;
+            transition: 0.4s ease;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+      }
+}
+  }
+}
+@media only screen and (max-width: 1200px) {
+    .luks {
+        clip-path: polygon(100% 0, 100% 100%, 61% 99%, 21% 98%, 0 100%, 0 0);
+      .lukscon {
+        .luksdiv {
+          flex: 1 1 calc(50% - 25px);
+          max-width: calc(50% - 25px);
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .luks {
+        gap: 20px;
+        .span1{
+            flex-direction: column;
+            align-items:center;
+        }
+        clip-path: polygon(100% 0, 100% 100%, 61% 99%, 21% 98%, 0 100%, 0 0);
+       .lukscon{
+        padding: 50px 40px 300px;
+        .luksdiv {
+          flex: 1 1 calc(100%);
+          max-width: 100%;
+        }
+      }
+    }
+  }

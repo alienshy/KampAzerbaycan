@@ -1,0 +1,48 @@
+.attacment{
+    width: 100%;
+    background: linear-gradient(
+        rgba(112, 122, 67, 0.4),
+        rgba(112, 132, 74, 0.4)
+      ),
+      url("../img/Image-13.jpg");
+      padding: 200px 32px 200px ;
+      background-attachment: fixed;
+      background-size:cover;
+      
+      @include column;
+      justify-content: center;
+      align-items:center;
+      gap: 20px;
+      background-repeat: no-repeat;
+      margin-top: -100px;
+      h1{
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        font-family: "Lato", Sans-serif;
+      }
+      p{
+        color: white;
+        font-size: 26px;
+        text-align: center;
+
+        font-family: "Lato", Sans-serif;
+      }
+      button {
+        padding: 10px;
+        display: flex;
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed $colordarkgreen;
+        border-radius: 30px;
+        font-size: 20px;
+        display: flex;
+        color: $colorgreen;
+        gap: 10px;
+        transition: 0.4s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+}
