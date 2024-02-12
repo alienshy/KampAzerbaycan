@@ -1,14 +1,12 @@
 main {
   width: 100%;
   background: linear-gradient(
-      rgba(189, 191, 166, 0.9),
-      rgba(189, 191, 166, 0.9)
+    rgba(233, 235, 203,0.8),
+    rgba(233, 235, 203,0.8),
     ),
     url("/assets/img/01-Converted-01.png");
   background-size:contain;  
   padding: 100px 20px;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
-
   h1 {
     color: $colordarkgreen;
     font-size: 60px;
@@ -22,6 +20,33 @@ main {
     padding: 20px;
     text-align: center;
     font-family: "Lato", Sans-serif;
+  }
+  .mainsear{
+    width: 100%;
+    padding: 50px 0px 10px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+    #mainsearch{
+      padding: 10px 20px;
+      outline: none;
+      border: 2px dashed $colorgreen;
+      border-radius:20px;
+      font-family: "Lato", Sans-serif;
+
+    }
+    select{
+      font-family: "Lato", Sans-serif;
+      padding: 10px;
+      color:$colorgreen;
+      outline: none;
+      border: 2px dashed $colorgreen;
+      border-radius:20px;
+      option{
+        color:$colorgreen;
+      }
+    }
   }
   #maincon {
     display: flex;

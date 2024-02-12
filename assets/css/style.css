@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background-color: #eaeccd;
+  background-color: rgb(233, 235, 203);
 }
 
 nav {
@@ -25,6 +25,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  z-index: 10000;
 }
 nav div {
   display: flex;
@@ -188,19 +189,58 @@ nav menu.show {
   align-items: center;
 }
 #login-form .form2 {
+  height: 300px;
+  border: 2px dashed #475d01;
+  width: 20%;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  width: 300px;
   gap: 20px;
 }
+#login-form .form2 h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
 #login-form .form2 label {
-  color: black;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  width: 100%;
+  padding: 0 20px;
+}
+#login-form .form2 input {
+  width: 90%;
+  border: 1px dashed #475d01;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  color: #475d01;
+}
+#login-form .form2 #submit {
+  width: 50%;
+  border: 1px solid #475d01;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  color: #475d01;
+  background-color: #eaeccd;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+#login-form .form2 #submit:hover {
+  background-color: #475d01;
+  color: white;
 }
 
 section {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
+  background: linear-gradient(rgba(233, 235, 203, 0.8), rgba(233, 235, 203, 0.8)), url("../img/459213_adapted_landscape_2400x2400_1707135241.jpg");
+  -webkit-clip-path: polygon(100% 0, 100% 96%, 78% 100%, 59% 98%, 42% 100%, 25% 97%, 11% 100%, 0 95%, 0 0);
+          clip-path: polygon(100% 0, 100% 96%, 78% 100%, 59% 98%, 42% 100%, 25% 97%, 11% 100%, 0 95%, 0 0);
   background-size: cover;
   padding: 100px 50px 200px;
 }
@@ -262,7 +302,7 @@ section .sectioncon .sectiontext .learn .bi-caret-right-fill {
   font-size: 30px;
   background-color: #475d01;
   color: white;
-  padding: 10px;
+  padding: 12px 15px;
   border-radius: 999999px;
   transition: 0.4s ease;
 }
@@ -332,11 +372,9 @@ section .sectioncon .sectiontext .learn button i {
 }
 main {
   width: 100%;
-  background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
+  background: linear-gradient(rgba(233, 235, 203, 0.8), rgba(233, 235, 203, 0.8)), url("/assets/img/01-Converted-01.png");
   background-size: contain;
   padding: 100px 20px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
-          clip-path: polygon(0 0, 100% 0, 100% 95%, 83% 100%, 60% 95%, 40% 100%, 21% 94%, 0 98%);
 }
 main h1 {
   color: #333D29;
@@ -351,6 +389,32 @@ main p {
   padding: 20px;
   text-align: center;
   font-family: "Lato", Sans-serif;
+}
+main .mainsear {
+  width: 100%;
+  padding: 50px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .mainsear #mainsearch {
+  padding: 10px 20px;
+  outline: none;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+  font-family: "Lato", Sans-serif;
+}
+main .mainsear select {
+  font-family: "Lato", Sans-serif;
+  padding: 10px;
+  color: #475d01;
+  outline: none;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+}
+main .mainsear select option {
+  color: #475d01;
 }
 main #maincon {
   display: flex;
@@ -487,6 +551,8 @@ main #maincon .cards button:hover {
   padding: 200px 32px 200px;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-clip-path: polygon(21% 7%, 46% 3%, 76% 4%, 100% 0, 100% 98%, 64% 95%, 36% 97%, 19% 94%, 0 100%, 0 0);
+          clip-path: polygon(21% 7%, 46% 3%, 76% 4%, 100% 0, 100% 98%, 64% 95%, 36% 97%, 19% 94%, 0 100%, 0 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1032,5 +1098,52 @@ footer .footercon .footerdiv2 .footerdiv3 div i {
     padding: 0;
     gap: 40px;
     flex-direction: column;
+  }
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999999;
+  top: 0;
+  display: none;
+  left: 0;
+}
+.modal .modaldiv {
+  padding: 100px 200px;
+  width: 100%;
+  height: 100vh;
+}
+.modal .modaldiv iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+  }
+  .modal .modaldiv {
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+  }
+  .modal .modaldiv iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

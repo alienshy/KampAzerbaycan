@@ -8,7 +8,7 @@
       padding: 200px 32px 200px ;
       background-attachment: fixed;
       background-size:cover;
-      
+      clip-path: polygon(21% 7%, 46% 3%, 76% 4%, 100% 0, 100% 98%, 64% 95%, 36% 97%, 19% 94%, 0 100%, 0 0);
       @include column;
       justify-content: center;
       align-items:center;

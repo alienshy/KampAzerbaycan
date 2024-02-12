@@ -1,8 +1,11 @@
+///////url////
 let url = "http://localhost:3000/maps"
 
 
 
-//////menu/////
+
+
+//////MENU/////
 let menu = document.querySelector("menu")
 document.querySelector(".bi-list").addEventListener("click",()=>{
     // document.querySelector("menu").style.display = "flex";
@@ -35,11 +38,12 @@ window.addEventListener("resize",()=>{
 
 
 
-
+////////////ADD/////////
 
 let card = document.querySelector("#maincon")
 let sort = document.querySelector("#sort")
-let search = document.getElementById("search");
+let search = document.querySelector("#mainsearch");
+console.log(search);
 let filter = []
 let copy = []
 
@@ -70,7 +74,7 @@ filter.forEach(element => {
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
-   <a href="./details.htm?id=${element.id} class="details"> <button>
+   <a href="./details.htm?id=${element.id}" class="details"> <button>
    <i  class="bi bi-arrow-right-circle-fill"></i>Learn More 
     </button></a>
   </div>
@@ -80,33 +84,133 @@ filter.forEach(element => {
 getall()
 
 
-let gir = document.querySelector(".gir");
-let qeyd = document.querySelector(".qeyd");
-let person = document.querySelector(".bi-person-circle")
-
-let logout = document.querySelector(".trash");
-
-let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
-if(user){
-  gir.innerHTML = `${user}`
-  logout.style.display = "block";
-  person.style.display = "block"
-  qeyd.style.display = "none";
-  gir.style.position = "absolute";
-  gir.style.right = "200px";
-  gir.style.top = "100px";
-}
-function changeFontSize(size) {
-  document.getElementById.gir.style.fontSize = size - 'px';
-}
-changeFontSize(4);
-
-
-
-logout.addEventListener("click",()=>{
-  localStorage.removeItem('currentUser');
-  logout.style.display = "none"
-  gir.innerHTML = "Giriş";
-  person.style.display = "none"
-  qeyd.style.display = "block";
+//////////////SORT///////
+sort.addEventListener("change",(e)=>{
+  if(e.target.value == "a-z"){
+      filter.sort((a,b)=>a.name.localeCompare(b.name))
+  }
+  else if(e.target.value == "z-a"){
+      filter.sort((a,b)=>b.name.localeCompare(a.name))
+  }
+  else{
+      filter = copy
+  }
+  getall()
 })
+
+
+
+/////////SEARCH//////
+search.addEventListener("input",(e)=>{
+  filter = copy
+  filter = filter.filter((y)=>{
+      return y.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  })
+  getall()
+})
+
+
+
+
+/////////GIRIS?///////
+// let gir = document.querySelector(".gir");
+// let qeyd = document.querySelector(".qeyd");
+// let person = document.querySelector(".bi-person-circle")
+
+// let logout = document.querySelector("#trash");
+
+// let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
+// if(user){
+//   gir.innerHTML = `${user}`
+//   logout.style.display = "block";
+//   person.style.display = "block"
+//   qeyd.style.display = "none";
+// }
+// logout.addEventListener("click",()=>{
+//   localStorage.removeItem('currentUser');
+//   logout.style.display = "none"
+//   gir.innerHTML = "Giriş";
+//   person.style.display = "none"
+//   qeyd.style.display = "block";
+// })
+
+
+
+//////modaldiv////
+let modalclick = document.querySelector(".bi-caret-right-fill");
+let modaldiv = document.querySelector(".modal");
+modalclick.addEventListener("click",()=>{
+  setTimeout(() => {
+    modaldiv.style.display = "flex";
+  }, 200);
+})
+window.addEventListener("click",()=>{
+  modaldiv.style.display = "none";
+})
+window.addEventListener("resize",()=>{
+  if(window.innerWidth < 786){
+    modaldiv.style.display = "none";
+  }
+})
+
+
+
+////////say1/////
+const say = function(value, interval) {
+  function sayiyiArtir() {
+      let sayim1 = document.querySelector(".sayim1");
+      let sayi = 0;
+      function artir() {
+          sayim1.innerHTML = sayi;
+          sayi += 3;
+          if (sayi <= value) {
+              setTimeout(artir, interval);
+          }
+      }
+      artir(); 
+  }
+  sayiyiArtir();
+};
+say(3434, 0.001);
+
+
+
+
+//////say2///////
+const say2 = function(value, interval) {
+  function sayiyiArtir() {
+      let sayim2 = document.querySelector(".sayim2");
+      let sayi = 0;
+      function artir() {
+          sayim2.innerHTML = sayi;
+          sayi += 3;
+          if (sayi <= value) {
+              setTimeout(artir, interval);
+          }
+      }
+      artir(); 
+  }
+  sayiyiArtir();
+};
+say2(2344, 0.001);
+
+
+
+
+///////say3///////
+const say3 = function(value, interval) {
+  function sayiyiArtir() {
+      let sayim3 = document.querySelector(".sayim3");
+      let sayi = 0;
+      function artir() {
+          sayim3.innerHTML = sayi;
+          sayi += 3;
+          if (sayi <= value) {
+              setTimeout(artir, interval);
+          }
+      }
+      artir(); 
+  }
+  sayiyiArtir();
+};
+say3(1867, 0.001);

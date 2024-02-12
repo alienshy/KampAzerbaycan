@@ -3,6 +3,7 @@ nav {
   width: 100%;
   @include spacebetween;
   position: absolute;
+  z-index: 10000;
   div {
     @include center;
     gap: 10px;

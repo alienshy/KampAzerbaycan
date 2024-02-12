@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 body{
-    background-color:#eaeccd;
+    background-color:rgb(233, 235, 203);
 }
 ///color
 $colordarkgreen:#333D29;
@@ -50,6 +50,7 @@ $colorimgborder:#F0EAD2;
 @import './luks';
 @import './havefun';
 @import './footer';
+@import './modal';
 
 
 

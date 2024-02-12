@@ -26,15 +26,15 @@
         <a href="./index.htm">Ana Səhifə</a>
         <a href="">Xidmətlər və Kateqoriyalar</a>
         <a href="">Haqqımızda və Əlaqə</a>
-        <a href="/login.htm" class="gir">Giriş</a>
-        <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
         <a href="./user.htm"
           ><i
             class="bi bi-person-circle"
             style="display: none; font-size: 20px"
           ></i
         ></a>
-        <a class="trash" style="display: none">çıxış</a>
+        <a href="/login.htm" class="gir">Giriş</a>
+        <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
+        <a id="trash" style="display: none">çıxış</a>
       </ul>
       <div class="icons">
         <a href=""> <i class="bi bi-facebook"></i></a>
@@ -48,11 +48,16 @@
         <a href="./index.htm">Ana Səhifə</a>
         <a href="">Xidmətlər və Kateqoriyalar</a>
         <a href="">Haqqımızda və Əlaqə</a>
+        <a href="./user.htm"
+          ><i
+            class="bi bi-person-circle"
+            style="display: none; font-size: 20px"
+          ></i
+        ></a>
         <a href="/login.htm" class="gir">Giriş</a>
         <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
-        <a class="trash" style="display: none">çıxış</a>
-        <i class="bi bi-person-circle" style="display: none"></i>
-        <div>
+        <a id="trash" style="display: none">çıxış</a>
+        <div class="icons">
           <a href=""> <i class="bi bi-facebook"></i></a>
           <a href="https://instagram.com/alisahverdiyew"
             ><i class="bi bi-instagram"></i
@@ -76,21 +81,29 @@
             <h2>Anı yaşa !</h2></span
           >
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Azərbaycanda ilk dəfədir ki, kapm yerlərində çətinlik yaşatmırıqq</p>
           <div class="learn">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More</button
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı</button
             ><i class="bi bi-caret-right-fill"></i>
           </div>
         </div>
       </div>
     </section>
+
     <main>
-      <h1>Find Your Bliss With Luxury Camping</h1>
+      <h1>Lüks düşərgə ilə xoşbəxtliyinizi tapın</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-        luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        Düzgün istirahət və uyğun düşərgə avadanlıqlarından yararlanmağın vaxtı deyilmi? 
       </p>
+      <div class="mainsear">
+        <input type="search" placeholder="axtar" id="mainsearch" />
+        <select name="" id="sort">
+          <option value="def">normal</option>
+          <option value="a-z">a-z</option>
+          <option value="z-a">z-a</option>
+        </select>
+      </div>
       <div class="con maincon" id="maincon"></div>
     </main>
     <div class="luks">
@@ -120,12 +133,12 @@
             <h4 class="cardslocation">Yağlı Bulaq</h4></span
           >
           <span class="span3"
-            ><p>3324324</p>
+            ><p class="sayim1">0</p>
             <i class="bi bi-heart-fill"></i
           ></span>
           <a href=""
             ><button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button></a
           >
         </div>
@@ -149,12 +162,12 @@
             <h4 class="cardslocation">Yağlı Bulaq</h4></span
           >
           <span class="span3"
-            ><p>3324324</p>
+            ><p class="sayim2">0</p>
             <i class="bi bi-heart-fill"></i
           ></span>
           <a href=""
             ><button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button></a
           >
         </div>
@@ -178,12 +191,12 @@
             <h4 class="cardslocation">Yağlı Bulaq</h4></span
           >
           <span class="span3"
-            ><p>3324324</p>
+            ><p class="sayim3">0</p>
             <i class="bi bi-heart-fill"></i
           ></span>
           <a href=""
             ><button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button></a
           >
         </div>
@@ -196,7 +209,7 @@
         itirməyin.
       </p>
       <a href="./singup.htm">
-        <button><i class="bi bi-arrow-right-circle-fill"></i>Learn More</button>
+        <button><i class="bi bi-arrow-right-circle-fill"></i>ətraflı</button>
       </a>
     </div>
     <div class="havefun">
@@ -213,7 +226,7 @@
           >
           <a href="">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button>
           </a>
         </div>
@@ -225,7 +238,7 @@
           <p>balıq ovu üçün ən yaxşı yer</p>
           <a href="">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button>
           </a>
         </div>
@@ -237,7 +250,7 @@
           <p>Təhlükəsiz şəkildə veloyürüyüşlər</p>
           <a href="">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button>
           </a>
         </div>
@@ -249,7 +262,7 @@
           <p>Üzməküçün təklükəsiz su mənbələri</p>
           <a href="">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button>
           </a>
         </div>
@@ -261,7 +274,7 @@
           <p>Ocaq basinda barbekü keyfisi</p>
           <a href="">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button>
           </a>
         </div>
@@ -273,7 +286,7 @@
           <p>Daha təklükəsiz yollarla gedən yerlər</p>
           <a href="">
             <button>
-              <i class="bi bi-arrow-right-circle-fill"></i>Learn More
+              <i class="bi bi-arrow-right-circle-fill"></i>ətraflı
             </button>
           </a>
         </div>
@@ -301,18 +314,18 @@
         </div>
         <div class="footerdiv2">
           <div class="contact">
-      <a>
+            <a>
               <span
                 ><i class="bi bi-phone"></i>
                 <h2>Phone</h2>
                 <p>(+994)-50-765-0828</p></span
-              >
-      </a><a>
+              > </a
+            ><a>
               <span
                 ><i class="bi bi-envelope-at-fill"></i>
                 <h2>kampaz@gmail.com</h2></span
-              >
-            </a><a>
+              > </a
+            ><a>
               <span
                 ><i class="bi bi-geo-alt-fill"></i>
                 <h1>Addres</h1>
@@ -338,14 +351,23 @@
             </div>
             <div>
               <h1>İş saatları</h1>
-              <i class="bi bi-clock-fill">   Bazar ertəsi - Cümə: 7:00-17:00</i>
-              <i class="bi bi-clock-fill">   Şənbə 9AM-3PM</i>
+              <i class="bi bi-clock-fill"> Bazar ertəsi - Cümə: 7:00-17:00</i>
+              <i class="bi bi-clock-fill"> Şənbə 9AM-3PM</i>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <!-- video teg -->
+    <div class="modal">
+      <div class="modaldiv">
+        <iframe src="https://www.youtube.com/embed/JHJXhgvL2mg" title="MICE Ate OUR 3-ROOM TENT AT SNOW CAMP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      </div>
+    </div>
+    <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/profil.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
