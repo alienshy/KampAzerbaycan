@@ -1,8 +1,222 @@
-footer{
-    width: 100%;
-    clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
-    .footercon{
+footer {
+  width: 100%;
+  clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+  background-color: $colordarkgreen;
+  .footercon {
+    display: flex;
+    gap: 20px;
+    padding: 100px 32px;
+    .footerdiv1 {
+      display: flex;
+      flex: 1 1 calc(30% - 20px);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      div {
+        @include center;
+        gap: 10px;
+        div {
+          width: 70px;
+          height: 70px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        h1 {
+          font-family: "Lato", Sans-serif;
+          font-weight: 900;
+          color: white;
+          font-size: 33px;
+        }
+      }
+      p {
+        font-size: 20px;
+        color:gray;
         width: 100%;
+      }
+      .icons {
+        display: flex;
+        gap: 15px;
+        i {
+          color: $colorgreen;
+          border-radius: 999999px;
+          padding: 5px;
+          font-size: 25px;
+          background-color: gray;
+          transition: 0.4s ease;
+          &:hover {
+            color: $colorlightgreen;
+          }
+        }
+      }
     }
+    .footerdiv2{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(70% - 30px);
+        max-width: calc(70% - 30px);
+        gap: 20px;
+        .contact{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            span{
+                display: flex;
+                align-items:center;
+                gap: 10px;
+                i{
+                    background-color:gray;
+                    padding: 10px;
+                    border-radius:999999px;
+                    color:$colorgreen;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                h1{
+                    font-family: "Lato", Sans-serif;
 
+                    color:white;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                h2{
+                    font-family: "Lato", Sans-serif;
+
+                    color: white;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                p{
+                    font-family: "Lato", Sans-serif;
+
+                    color:white;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+            }
+        }
+        hr{
+            border:1px dashed gray;
+        }
+        .footerdiv3{
+            display: flex;
+            padding: 0;
+            width: 100%;
+            justify-content: space-between;
+            div{
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                h1{
+                    font-family: "Lato", Sans-serif;
+                    color:white;
+                    font-size: 20px;
+                    width: 200px;
+                }
+                a{
+                    font-family: "Lato", Sans-serif;
+
+                    color:white;
+                    cursor: pointer;
+                    font-size: 15px;
+                    transition: 0.2s ease;
+                    &:hover{
+                        color:$colorgreen;
+                    }
+                }
+                i{
+                    padding: 10px;
+                    border-radius:999999px;
+                    color:white;
+                    font-size: 20px;
+                    cursor: pointer;
+                    align-items:center;
+                    
+                }
+
+            }
+        }
+    }
+  }
 }
+@media only screen and (max-width: 1300px) {
+    footer {
+        .footercon {
+          flex-direction: column;
+          gap: 40px;
+          .footerdiv1 {
+            gap: 30px;
+          }
+          .footerdiv2{
+              display: flex;
+              flex-direction: column;
+              flex: 1 1 calc(100% - 30px);
+              max-width: calc(100% - 30px);
+          }
+        }
+      }
+  }
+  @media only screen and (max-width: 992px) {
+    footer {
+        .footercon {
+          flex-direction: column;
+          gap: 40px;
+          .footerdiv1 {
+            gap: 30px;
+          }
+          .footerdiv2{
+              display: flex;
+              flex-direction: column;
+              flex: 1 1 calc(100% - 30px);
+              max-width: calc(100% - 30px);
+              .contact{
+                flex-direction: column;
+                gap: 20px;
+              }
+          }
+          .footerdiv3{
+            a{
+                font-size: 12px;
+            }
+            i{
+                width: 60%;
+            }
+          }
+        }
+      }
+  }
+  @media only screen and (max-width: 768px) {
+    footer {
+        .footercon {
+          flex-direction: column;
+          gap: 40px;
+          .footerdiv1 {
+            gap: 30px;
+            div{
+                h1{
+                    font-size: 20px;
+                }
+            }
+          }
+          .footerdiv2{
+            padding: 0px;
+              display: flex;
+              flex-direction: column;
+              flex: 1 1 calc(100%);
+              max-width: calc(100%);
+              .contact{
+                flex-direction: column;
+                gap: 20px;
+              }
+              .footerdiv3{
+                width: 100%;
+                padding: 0;
+                gap: 40px;
+                flex-direction: column;
+                
+              }
+          }
+        }
+      }
+  }

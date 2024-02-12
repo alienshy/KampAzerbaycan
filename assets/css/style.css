@@ -800,8 +800,12 @@ main #maincon .cards button:hover {
     padding: 200px 52px 100px;
   }
   .havefun .havefuncon .havefuntext {
+    gap: 40px;
     max-width: calc(50% - 20px);
     flex: 1 1 calc(50% - 20px);
+  }
+  .havefun .havefuncon .havefuntext h1 {
+    font-size: 30px;
   }
   .havefun .havefuncon .fishing {
     max-width: calc(50% - 20px);
@@ -825,7 +829,208 @@ footer {
   width: 100%;
   -webkit-clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
           clip-path: polygon(50% 0%, 69% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 4%);
+  background-color: #333D29;
 }
 footer .footercon {
+  display: flex;
+  gap: 20px;
+  padding: 100px 32px;
+}
+footer .footercon .footerdiv1 {
+  display: flex;
+  flex: 1 1 calc(30% - 20px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .footercon .footerdiv1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .footercon .footerdiv1 div div {
+  width: 70px;
+  height: 70px;
+}
+footer .footercon .footerdiv1 div div img {
   width: 100%;
+  height: 100%;
+}
+footer .footercon .footerdiv1 div h1 {
+  font-family: "Lato", Sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 33px;
+}
+footer .footercon .footerdiv1 p {
+  font-size: 20px;
+  color: gray;
+  width: 100%;
+}
+footer .footercon .footerdiv1 .icons {
+  display: flex;
+  gap: 15px;
+}
+footer .footercon .footerdiv1 .icons i {
+  color: #475d01;
+  border-radius: 999999px;
+  padding: 5px;
+  font-size: 25px;
+  background-color: gray;
+  transition: 0.4s ease;
+}
+footer .footercon .footerdiv1 .icons i:hover {
+  color: #66b400;
+}
+footer .footercon .footerdiv2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(70% - 30px);
+  max-width: calc(70% - 30px);
+  gap: 20px;
+}
+footer .footercon .footerdiv2 .contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footercon .footerdiv2 .contact span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footercon .footerdiv2 .contact span i {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 999999px;
+  color: #475d01;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer .footercon .footerdiv2 .contact span h1 {
+  font-family: "Lato", Sans-serif;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer .footercon .footerdiv2 .contact span h2 {
+  font-family: "Lato", Sans-serif;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer .footercon .footerdiv2 .contact span p {
+  font-family: "Lato", Sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+footer .footercon .footerdiv2 hr {
+  border: 1px dashed gray;
+}
+footer .footercon .footerdiv2 .footerdiv3 {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .footercon .footerdiv2 .footerdiv3 div {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+footer .footercon .footerdiv2 .footerdiv3 div h1 {
+  font-family: "Lato", Sans-serif;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+}
+footer .footercon .footerdiv2 .footerdiv3 div a {
+  font-family: "Lato", Sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+footer .footercon .footerdiv2 .footerdiv3 div a:hover {
+  color: #475d01;
+}
+footer .footercon .footerdiv2 .footerdiv3 div i {
+  padding: 10px;
+  border-radius: 999999px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  footer .footercon {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footercon .footerdiv1 {
+    gap: 30px;
+  }
+  footer .footercon .footerdiv2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+}
+@media only screen and (max-width: 992px) {
+  footer .footercon {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footercon .footerdiv1 {
+    gap: 30px;
+  }
+  footer .footercon .footerdiv2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+  footer .footercon .footerdiv2 .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footercon .footerdiv3 a {
+    font-size: 12px;
+  }
+  footer .footercon .footerdiv3 i {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .footercon {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footercon .footerdiv1 {
+    gap: 30px;
+  }
+  footer .footercon .footerdiv1 div h1 {
+    font-size: 20px;
+  }
+  footer .footercon .footerdiv2 {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  footer .footercon .footerdiv2 .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footercon .footerdiv2 .footerdiv3 {
+    width: 100%;
+    padding: 0;
+    gap: 40px;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
