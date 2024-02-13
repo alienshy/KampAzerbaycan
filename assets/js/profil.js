@@ -2,11 +2,19 @@ let gir = document.querySelector(".gir");
 let username = document.querySelector(".username")
 let qeyd = document.querySelector(".qeyd");
 let person = document.querySelector(".bi-person-circle")
-
 let logout = document.querySelector("#trash");
-
 let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
+let id2=  localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).id : null;
+let userBtn = document.querySelector(".userProfil");
+console.log(id2);
 if(user){
+
+userBtn.addEventListener("click",(e)=>{
+
+  e.preventDefault()
+  window.location=`./user.htm?id=${id2}`
+})
+
   username.innerHTML = `${user}`
   gir.style.display = "none"
   logout.style.display = "block";

@@ -1,0 +1,73 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutusdiv {
+  width: 100%;
+  padding: 200px 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: $colorgreen;
+  }
+
+  .haqqimizda, .elaqe, .tarix {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+    gap: 20px;
+    border: 2px dashed $colorgreen;
+    color: $colorgreen;
+    border-radius: 20px;
+    font-size: 20px;
+
+    h2 {
+      color: $colordarkgreen;
+    }
+  }
+}
+@media screen and(max-width:1200px)  {
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .aboutusdiv {
+    width: 100%;
+    padding: 200px 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+      color: $colorgreen;
+    }
+  
+    .haqqimizda, .elaqe, .tarix {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 20px 0;
+      gap: 20px;
+      border: 2px dashed $colorgreen;
+      color: $colorgreen;
+      border-radius: 20px;
+      font-size: 20px;
+  
+      h2 {
+        color: $colordarkgreen;
+      }
+    }
+  }
+    
+}

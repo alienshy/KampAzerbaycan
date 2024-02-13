@@ -5,7 +5,6 @@ let url1 = "http://localhost:3000/maps/";
 async function getCardById(id) {
   let res = await axios.get(url1 + id);
   let element = await res.data;
-  console.log(element);
   det.innerHTML = `
     <div class="cards">
     <div class="cardsimg">
@@ -34,3 +33,29 @@ async function getCardById(id) {
     `;
 }
 getCardById(id);
+
+////////////comment/////
+let comment_author = document.querySelector("#comment_author")
+let email = document.querySelector("#email")
+let comment = document.querySelector("#comment")
+let form = document.querySelector("form")
+console.log(comment_author);
+form.addEventListener("submit",async (e)=>{
+  e.preventDefault()
+  console.log("t5e7");
+
+  let res = await axios.get(url1 + id);
+  let element = await res.data;
+  let obj = {
+    name:comment_author.value,
+    email:email.value,
+    comment:comment.value
+  }
+  element.comments.push(obj)
+  axios.patch(url1+id,element)
+})
+
+
+
+
+

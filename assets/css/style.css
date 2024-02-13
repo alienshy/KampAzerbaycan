@@ -1027,6 +1027,164 @@ main .loadbutton .show:hover {
   padding: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .usersection {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(189, 191, 166, 0.9)), to(rgba(189, 191, 166, 0.9))), url("/assets/img/01-Converted-01.png");
+    background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
+    background-size: contain;
+    padding: 20px;
+    padding: 150px 32px;
+  }
+  .usersection .usertable {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70vh;
+    border: 2px dashed #475d01;
+    border-radius: 20px;
+    gap: 30px;
+  }
+  .usersection .usertable a {
+    font-size: 90px;
+    color: #475d01;
+  }
+  .usersection .usertable a .presonuser {
+    font-size: 50px;
+  }
+  .usersection .formdiv form {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .usersection .formdiv form .imgsecme {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    width: 50%;
+  }
+  .usersection .formdiv form .imgsecme label {
+    color: #475d01;
+    font-family: "Lato", Sans-serif;
+    width: 100%;
+    font-size: 30px;
+  }
+  .usersection .formdiv form .imgsecme label #file {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 170px;
+    border: 2px dashed #475d01;
+    border-radius: 20px;
+  }
+  .usersection .formdiv form .imgsecme div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usersection .formdiv form .imgsecme div .divimg {
+    width: 100%;
+    border: 2px dashed #475d01;
+    border-radius: 20px;
+    height: 300px;
+  }
+  .usersection .formdiv form .imgsecme div .divimg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .usersection .formdiv form .textform {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+  }
+  .usersection .formdiv form .textform label {
+    color: #475d01;
+    font-family: "Lato", Sans-serif;
+    width: 100%;
+    font-size: 30px;
+  }
+  .usersection .formdiv form .textform input {
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px dashed #475d01;
+    border-radius: 20px;
+  }
+  .usersection .formdiv form .textform #submit {
+    color: #475d01;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-family: "Lato", Sans-serif;
+    width: 200px;
+    font-size: 20px;
+  }
+  .usersection .formdiv form .textform #submit:hover {
+    background-color: #475d01;
+    border: 2px dashed white;
+    color: white;
+  }
+  .usersection .formdiv form .infoform {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .usersection .formdiv form .infoform label {
+    color: #475d01;
+    font-family: "Lato", Sans-serif;
+    width: 100%;
+    font-size: 30px;
+  }
+  .usersection .formdiv form .infoform textarea {
+    width: 100%;
+    border: 2px dashed #475d01;
+    outline: none;
+    border-radius: 20px;
+    height: 150px;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
 .attacment {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(112, 122, 67, 0.4)), to(rgba(112, 132, 74, 0.4))), url("../img/Image-13.jpg");
@@ -2142,5 +2300,93 @@ footer .footercon .footerdiv2 .footerdiv3 div i {
   text-align: center;
   font-size: 18px;
   color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutusdiv {
+  width: 100%;
+  padding: 200px 100px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutusdiv h2 {
+  color: #475d01;
+}
+
+.aboutusdiv .haqqimizda, .aboutusdiv .elaqe, .aboutusdiv .tarix {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+  gap: 20px;
+  border: 2px dashed #475d01;
+  color: #475d01;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.aboutusdiv .haqqimizda h2, .aboutusdiv .elaqe h2, .aboutusdiv .tarix h2 {
+  color: #333D29;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutusdiv {
+    width: 100%;
+    padding: 200px 10px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutusdiv h2 {
+    color: #475d01;
+  }
+  .aboutusdiv .haqqimizda, .aboutusdiv .elaqe, .aboutusdiv .tarix {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+    gap: 20px;
+    border: 2px dashed #475d01;
+    color: #475d01;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .aboutusdiv .haqqimizda h2, .aboutusdiv .elaqe h2, .aboutusdiv .tarix h2 {
+    color: #333D29;
+  }
 }
 /*# sourceMappingURL=style.css.map */

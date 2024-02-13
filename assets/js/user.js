@@ -1,17 +1,4 @@
-
-// let userh1 = document.querySelector(".userh1")
-// let useremail = document.querySelector(".useremail");
-// let person = document.querySelector(".bi-person-circle")
-
-// let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
-// if(user){
-//   userh1.innerHTML = `${user.title}`
-//   useremail.innerHTML = `${user.email}`
-
-// }
-
 let url = "http://localhost:3000/admin/"
-
 let form = document.querySelector("form")
 let file = document.querySelector("#file")
 let imgdiv = document.querySelector(".divimg img")
@@ -34,11 +21,6 @@ file.addEventListener("change",(e)=>{
 
 
 
-
-
-
-
-
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
     if(name.value.trim() == "" || text.value == "" || file.files.length === 0){
@@ -55,9 +37,12 @@ form.addEventListener("submit",(e)=>{
 })
 
 
+let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : null;
 
-
-
+if (user) {
+    document.querySelector(".userh1").textContent =`${user.title}`;
+    document.querySelector(".useremail").textContent=`${user.email}`
+}
 
 
 
