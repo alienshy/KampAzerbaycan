@@ -54,6 +54,47 @@ nav ul {
   width: 60%;
   gap: 22px;
 }
+nav ul #trash {
+  background-color: #475d01;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  color: white;
+  cursor: pointer;
+}
+nav ul #trash:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+  color: #475d01;
+}
+nav ul .bi-person-circle {
+  position: relative;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 4px;
+  font-style: normal;
+  transition: all 0.4s ease;
+}
+nav ul .bi-person-circle p {
+  pointer-events: none;
+  position: absolute;
+  padding: 20px;
+  border-radius: 0px;
+  opacity: 0;
+  bottom: -55px;
+  font-size: 16px;
+  left: -100px;
+}
+nav ul .bi-person-circle:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+}
+nav ul .bi-person-circle:hover p {
+  opacity: 1;
+  border-radius: 20px;
+}
 nav ul a {
   color: #475d01;
   font-size: 15px;
@@ -115,27 +156,31 @@ nav menu .bi-x {
 nav menu .bi-x:hover {
   color: #66b400;
 }
-nav menu a {
+nav menu ul {
+  width: 100%;
+  height: 100%;
+}
+nav menu ul a {
   color: #475d01;
   font-size: 25px;
   font-family: "Lato", Sans-serif;
   font-weight: 800;
   transition: 0.4s ease;
 }
-nav menu a:hover {
+nav menu ul a:hover {
   color: #66b400;
 }
-nav menu div {
+nav menu ul div {
   display: flex;
   width: 200px;
   justify-content: space-evenly;
 }
-nav menu div i {
+nav menu ul div i {
   color: #475d01;
   font-size: 35px;
   transition: all 0.4s ease;
 }
-nav menu div i:hover {
+nav menu ul div i:hover {
   color: #66b400;
   transform: rotateY(180deg);
 }
@@ -237,6 +282,7 @@ display: flex;
       font-size: 20px;
       border:2px dashed #475d01;
       width: 100%;
+      text-align: justify;
       padding: 10px;
       border-radius:20px;
 

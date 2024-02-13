@@ -26,8 +26,9 @@
         <a href="./index.htm">Ana Səhifə</a>
         <a href="">Xidmətlər və Kateqoriyalar</a>
         <a href="">Haqqımızda və Əlaqə</a>
+        <a href="/login.htm" class="gir">Giriş</a>
         <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
-       <a  class="trash" style="display: none; cursor: pointer;">çıxış</a>
+        <a id="trash" style="display: none">Çıxış</a>
       </ul>
       <div class="icons">
         <a href=""> <i class="bi bi-facebook"></i></a>
@@ -38,13 +39,22 @@
       </div>
       <i class="bi bi-list"></i>
       <menu>
-        <a href="./index.htm">Ana Səhifə</a>
-        <a href="">Xidmətlər və Kateqoriyalar</a>
-        <a href="">Haqqımızda və Əlaqə</a>
-        <a href="/login.htm" class="gir">Giriş</a>
-        <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
-        <a  class="trash" style="display: none; cursor: pointer;">çıxış</a>
-    <div>
+        <ul>
+          <a href="./index.htm">Ana Səhifə</a>
+          <a href="">Xidmətlər və Kateqoriyalar</a>
+          <a href="">Haqqımızda və Əlaqə</a>
+          <a href="./user.htm">
+            <i
+              class="bi bi-person-circle"
+              style="display: none; font-size: 40px"
+            >
+              <p class="username"></p> </i
+          ></a>
+          <a href="/login.htm" class="gir">Giriş</a>
+          <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
+          <a id="trash" style="display: none">Çıxış</a>
+        </ul>
+        <div class="icons">
           <a href=""> <i class="bi bi-facebook"></i></a>
           <a href="https://instagram.com/alisahverdiyew"
             ><i class="bi bi-instagram"></i
@@ -55,12 +65,44 @@
       </menu>
     </nav>
     <div class="usersection">
-        <div class="usertable">
-            <a href="./user.htm"><i class="bi bi-person-circle personuser"></i></a>
-
-            
-
-        </div>
+      <div class="usertable">
+        <h1 class="userh1"></h1>
+        <p class="useremail"></p>
+      </div>
+      <div class="formdiv">
+        <form>
+          <div class="imgsecme">
+            <label for="sekil"
+              >Sekil elave edin:
+              <input type="file" id="file" />
+            </label>
+            <div>
+              <div class="divimg">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="textform">
+            <label for="ad">Bolge</label>
+            <input
+              type="text"
+              placeholder="Bolge adini daxil edin"
+              id="bolge"
+            />
+            <label for="mekan">Mekan</label>
+            <input
+              type="text"
+              id="mekan"
+              placeholder="Mekan adini daxil edin"
+            />
+            <input type="submit" id="submit" />
+          </div>
+          <div class="infoform" style="width: 100%">
+            <label for="infoform">Ətraflı</label>
+            <textarea name="info" id="infoform"></textarea>
+          </div>
+        </form>
+      </div>
     </div>
     <footer>
       <div class="con footercon">
@@ -130,6 +172,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/profil.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/user.js"></script>
   </body>
 </html>

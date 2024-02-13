@@ -1,0 +1,126 @@
+.admin {
+  width: 100%;
+  padding: 50px 32px;
+  @include column;
+  gap: 100px;
+  .admintable {
+    width: 100%;
+    padding: 20px;
+    @include column;
+    gap: 30px;
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      width: 100%;
+      color: $colordarkgreen;
+      font-family: "Lato", Sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      thead,
+      tbody {
+        width: 100%;
+        tr,
+        td,
+        th {
+          color: $colordarkgreen;
+          text-align: start;
+          padding: 10px;
+          font-family: "Lato", Sans-serif;
+          border: 2px dashed $colorgreen;
+          font-size: 20px;
+
+          i {
+            cursor: pointer;
+            font-family: "Lato", Sans-serif;
+            font-size: 20px;
+            color: $colorgreen;
+          }
+        }
+      }
+    }
+  }
+  .adminsection {
+    width: 100%;
+    @include column;
+    gap: 20px;
+    .admindiv {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .adminsectionimg {
+        width: 40%;
+        height: 400px;
+        background-color: white;
+        padding: 20px;
+        border: 2px dashed $colorgreen;
+        border-radius: 20px;
+        img {
+          width: 100%;
+          border-radius: 20px;
+
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .admintextdiv {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+          font-size: 45px;
+          width: 100%;
+          color: $colordarkgreen;
+          font-family: "Lato", Sans-serif;
+        }
+        h3 {
+          font-size: 40px;
+          font-weight: 400;
+          width: 100%;
+          color: $colordarkgreen;
+          font-family: "Lato", Sans-serif;
+        }
+        p {
+          padding: 10px;
+          font-size: 18px;
+          width: 100%;
+          color: $colordarkgreen;
+          font-family: "Lato", Sans-serif;
+          background-color: white;
+          padding: 10px;
+          text-align: justify;
+          border: 2px dashed $colorgreen;
+          border-radius: 10px;
+          color: $colorgreen;
+        }
+      }
+      
+    }
+    .buttonadmin{
+      padding: 50px 0px;
+      width: 100%;
+      @include center;
+      gap: 30px;
+      button {
+        padding: 10px;
+        display: flex;
+        cursor: pointer;
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed $colordarkgreen;
+        border-radius: 30px;
+        font-size: 20px;
+        display: flex;
+        color: $colorgreen;
+        gap: 10px;
+        transition: 0.4s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

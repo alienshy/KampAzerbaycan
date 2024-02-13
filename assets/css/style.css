@@ -54,6 +54,47 @@ nav ul {
   width: 60%;
   gap: 22px;
 }
+nav ul #trash {
+  background-color: #475d01;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  color: white;
+  cursor: pointer;
+}
+nav ul #trash:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+  color: #475d01;
+}
+nav ul .bi-person-circle {
+  position: relative;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 4px;
+  font-style: normal;
+  transition: all 0.4s ease;
+}
+nav ul .bi-person-circle p {
+  pointer-events: none;
+  position: absolute;
+  padding: 20px;
+  border-radius: 0px;
+  opacity: 0;
+  bottom: -55px;
+  font-size: 16px;
+  left: -100px;
+}
+nav ul .bi-person-circle:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+}
+nav ul .bi-person-circle:hover p {
+  opacity: 1;
+  border-radius: 20px;
+}
 nav ul a {
   color: #475d01;
   font-size: 15px;
@@ -115,27 +156,31 @@ nav menu .bi-x {
 nav menu .bi-x:hover {
   color: #66b400;
 }
-nav menu a {
+nav menu ul {
+  width: 100%;
+  height: 100%;
+}
+nav menu ul a {
   color: #475d01;
   font-size: 25px;
   font-family: "Lato", Sans-serif;
   font-weight: 800;
   transition: 0.4s ease;
 }
-nav menu a:hover {
+nav menu ul a:hover {
   color: #66b400;
 }
-nav menu div {
+nav menu ul div {
   display: flex;
   width: 200px;
   justify-content: space-evenly;
 }
-nav menu div i {
+nav menu ul div i {
   color: #475d01;
   font-size: 35px;
   transition: all 0.4s ease;
 }
-nav menu div i:hover {
+nav menu ul div i:hover {
   color: #66b400;
   transform: rotateY(180deg);
 }
@@ -543,6 +588,102 @@ main #maincon .cards button:hover {
 }
 .usersection .usertable a .presonuser {
   font-size: 50px;
+}
+.usersection .formdiv form {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 100px;
+  display: flex;
+  width: 100%;
+}
+.usersection .formdiv form .imgsecme {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+.usersection .formdiv form .imgsecme label {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  width: 100%;
+  font-size: 30px;
+}
+.usersection .formdiv form .imgsecme label #file {
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 170px;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+}
+.usersection .formdiv form .imgsecme div {
+  display: flex;
+  flex-direction: column;
+}
+.usersection .formdiv form .imgsecme div .divimg {
+  width: 100%;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+  height: 300px;
+}
+.usersection .formdiv form .imgsecme div .divimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.usersection .formdiv form .textform {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+.usersection .formdiv form .textform label {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  width: 100%;
+  font-size: 30px;
+}
+.usersection .formdiv form .textform input {
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+}
+.usersection .formdiv form .textform #submit {
+  color: #475d01;
+  transition: 0.3s ease;
+  font-family: "Lato", Sans-serif;
+  width: 200px;
+  font-size: 20px;
+}
+.usersection .formdiv form .textform #submit:hover {
+  background-color: #475d01;
+  border: 2px dashed white;
+  color: white;
+}
+.usersection .formdiv form .infoform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.usersection .formdiv form .infoform label {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  width: 100%;
+  font-size: 30px;
+}
+.usersection .formdiv form .infoform textarea {
+  width: 100%;
+  border: 2px dashed #475d01;
+  outline: none;
+  border-radius: 20px;
+  height: 150px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .attacment {
@@ -1146,4 +1287,141 @@ footer .footercon .footerdiv2 .footerdiv3 div i {
     height: 100%;
     border-radius: 20px;
   }
+}
+.admin {
+  width: 100%;
+  padding: 50px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.admin .admintable {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.admin .admintable h1 {
+  font-size: 45px;
+  text-align: center;
+  width: 100%;
+  color: #333D29;
+  font-family: "Lato", Sans-serif;
+}
+.admin .admintable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.admin .admintable table thead,
+.admin .admintable table tbody {
+  width: 100%;
+}
+.admin .admintable table thead tr,
+.admin .admintable table thead td,
+.admin .admintable table thead th,
+.admin .admintable table tbody tr,
+.admin .admintable table tbody td,
+.admin .admintable table tbody th {
+  color: #333D29;
+  text-align: start;
+  padding: 10px;
+  font-family: "Lato", Sans-serif;
+  border: 2px dashed #475d01;
+  font-size: 20px;
+}
+.admin .admintable table thead tr i,
+.admin .admintable table thead td i,
+.admin .admintable table thead th i,
+.admin .admintable table tbody tr i,
+.admin .admintable table tbody td i,
+.admin .admintable table tbody th i {
+  cursor: pointer;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px;
+  color: #475d01;
+}
+.admin .adminsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.admin .adminsection .admindiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.admin .adminsection .admindiv .adminsectionimg {
+  width: 40%;
+  height: 400px;
+  background-color: white;
+  padding: 20px;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+}
+.admin .adminsection .admindiv .adminsectionimg img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.admin .adminsection .admindiv .admintextdiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.admin .adminsection .admindiv .admintextdiv h1 {
+  font-size: 45px;
+  width: 100%;
+  color: #333D29;
+  font-family: "Lato", Sans-serif;
+}
+.admin .adminsection .admindiv .admintextdiv h3 {
+  font-size: 40px;
+  font-weight: 400;
+  width: 100%;
+  color: #333D29;
+  font-family: "Lato", Sans-serif;
+}
+.admin .adminsection .admindiv .admintextdiv p {
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  color: #333D29;
+  font-family: "Lato", Sans-serif;
+  background-color: white;
+  padding: 10px;
+  text-align: justify;
+  border: 2px dashed #475d01;
+  border-radius: 10px;
+  color: #475d01;
+}
+.admin .adminsection .buttonadmin {
+  padding: 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.admin .adminsection .buttonadmin button {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #333D29;
+  border-radius: 30px;
+  font-size: 20px;
+  display: flex;
+  color: #475d01;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+.admin .adminsection .buttonadmin button:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
