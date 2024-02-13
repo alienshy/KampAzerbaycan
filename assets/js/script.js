@@ -43,7 +43,7 @@ window.addEventListener("resize",()=>{
 let card = document.querySelector("#maincon")
 let sort = document.querySelector("#sort")
 let search = document.querySelector("#mainsearch");
-console.log(search);
+let maxl = 3;
 let filter = []
 let copy = []
 
@@ -54,7 +54,7 @@ async function getall(){
     copy = data
     card.innerHTML=""
     filter = filter.length || (search && search.value) ? filter : data;
-filter.forEach(element => {
+     filter.slice(0,maxl).forEach(element => {
     card.innerHTML+=`
     <div class="cards">
     <div class="cardsimg">
@@ -82,6 +82,79 @@ filter.forEach(element => {
 });
 }
 getall()
+
+
+
+let load = document.querySelector(".load")
+let show = document.querySelector(".show")
+// //////load//////
+// function plus(){
+//   maxl +=3
+// }
+// function minus(){
+//   maxl -=3
+// }
+// load.addEventListener("click", ()=>{
+//   plus()
+//   getall()
+//   console.log(maxl);
+// })
+// show.addEventListener("click", ()=>{
+//   minus()
+//   getall()
+// })
+
+load.addEventListener("click",()=>{
+  math2()
+  maxl += 3;
+  getall()
+})
+show.addEventListener("click",()=>{
+  math1()
+  getall()
+})
+// function math1() {
+//   if (maxl > 3) {
+//     show.style.display = "flex";
+//     maxl -= 3;
+//   }
+//   if (maxl === 3) {
+//     show.style.display = "none";
+//     load.style.display = "flex";
+//   }
+// }
+
+// function math2() {
+//   if (show.style.display === "none") {
+//     show.style.display = "flex";
+//     maxl += 3;
+//   }
+//   if (maxl >= copy.length) {
+//     load.style.display = "none";
+//   }
+// }
+function math1(){
+  if(maxl>3){
+    show.style.display = "flex"
+    maxl -= 3;
+
+  }
+  if(maxl =3){
+    show.style.display = "none"
+    load.style.display = "flex"
+  }
+}
+function math2(){
+  if(show.style.display = "none"){
+    show.style.display = "flex"
+  }
+  if(maxl >= copy.length){
+    load.style.display = "none"
+  }
+}
+
+
+
 
 
 //////////////SORT///////
@@ -214,3 +287,8 @@ const say3 = function(value, interval) {
   sayiyiArtir();
 };
 say3(1867, 0.001);
+
+
+
+
+

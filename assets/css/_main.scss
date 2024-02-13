@@ -113,7 +113,57 @@ main {
       }
     }
   }
+  .loadbutton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items:center;
+    .load {
+      padding: 10px;
+      display: flex;
+      width: 170px;
+      align-items: center;
+      justify-content: center;
+      border: 1px dashed $colordarkgreen;
+      border-radius: 30px;
+      font-size: 20px;
+      display: flex;
+      color: $colorgreen;
+      gap: 10px;
+      transition: 0.4s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .show{
+      padding: 10px;
+      display: flex;
+      width: 170px;
+      align-items: center;
+      justify-content: center;
+      border: 1px dashed $colordarkgreen;
+      border-radius: 30px;
+      font-size: 20px;
+      display: flex;
+      color: $colorgreen;
+      gap: 10px;
+      transition: 0.4s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+    }
+  }
 }
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1200px) {
   main {
 
@@ -126,6 +176,10 @@ main {
     }
   }
 }
+
+
+
+
 @media only screen and (max-width: 768px) {
   main {
     clip-path: polygon(38% 2%, 63% 4%, 88% 0, 100% 0, 100% 100%, 0 100%, 0 0, 15% 0);

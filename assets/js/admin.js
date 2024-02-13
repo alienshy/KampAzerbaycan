@@ -94,7 +94,7 @@ async function sendThisData(id){
             location: data.location,
             info: data.info
         })
-        deleteuser(id)
+        await axios.delete(url2 + id)
     } catch(error){
         console.log("error");
     }
