@@ -6,6 +6,9 @@ let name = document.querySelector("#bolge")
 let text = document.querySelector("#mekan")
 let info = document.querySelector("#infoform")
 let valid = document.querySelector(".valide")
+let link = document.querySelector("#link")
+
+
 
 
 file.addEventListener("change",(e)=>{
@@ -23,13 +26,14 @@ file.addEventListener("change",(e)=>{
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
-    if(name.value.trim() == "" || text.value == "" || file.files.length === 0){
+    if(name.value.trim() == "" || text.value == "" || info.value == "" || file.files.length === 0){
         alert("doldur")
     }
     else{
         axios.post(url,{
             img:imgdiv.src,
             name:name.value,
+            map:link.value,
             location:text.value,
             info:info.value,
         })

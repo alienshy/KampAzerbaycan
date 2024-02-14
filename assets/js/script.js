@@ -8,23 +8,20 @@ let url = "http://localhost:3000/maps"
 //////MENU/////
 let menu = document.querySelector("menu")
 document.querySelector(".bi-list").addEventListener("click",()=>{
-    // document.querySelector("menu").style.display = "flex";
-    // document.querySelector(".bi-list").style.display = "none";
+
     if (!menu.classList.contains("show")) {
         menu.classList.add("show")
     }
 
 })
 document.querySelector(".bi-x").addEventListener("click",()=>{
-    // document.querySelector("menu").style.display = "none";
-    // document.querySelector(".bi-list").style.display = "flex";
+
     if (menu.classList.contains("show")) {
         menu.classList.remove("show")
     }
 })
 window.addEventListener("resize",()=>{
     if(window.innerWidth > 1300){
-        // document.querySelector("menu").style.display = "none";
             menu.classList.remove("show");
         document.querySelector(".bi-list").style.display = "none";
     }
@@ -34,7 +31,6 @@ window.addEventListener("resize",()=>{
     }
 })
 
-// let search = document.querySelector("#search")
 
 
 
@@ -85,24 +81,9 @@ getall()
 
 
 
-let load = document.querySelector(".load")
-let show = document.querySelector(".show")
-// //////load//////
-// function plus(){
-//   maxl +=3
-// }
-// function minus(){
-//   maxl -=3
-// }
-// load.addEventListener("click", ()=>{
-//   plus()
-//   getall()
-//   console.log(maxl);
-// })
-// show.addEventListener("click", ()=>{
-//   minus()
-//   getall()
-// })
+let load = document.querySelector("#load")
+let show = document.querySelector("#show")
+
 
 load.addEventListener("click",()=>{
   math2()
@@ -113,26 +94,7 @@ show.addEventListener("click",()=>{
   math1()
   getall()
 })
-// function math1() {
-//   if (maxl > 3) {
-//     show.style.display = "flex";
-//     maxl -= 3;
-//   }
-//   if (maxl === 3) {
-//     show.style.display = "none";
-//     load.style.display = "flex";
-//   }
-// }
 
-// function math2() {
-//   if (show.style.display === "none") {
-//     show.style.display = "flex";
-//     maxl += 3;
-//   }
-//   if (maxl >= copy.length) {
-//     load.style.display = "none";
-//   }
-// }
 function math1(){
   if(maxl>3){
     show.style.display = "flex"
@@ -184,28 +146,6 @@ search.addEventListener("input",(e)=>{
 
 
 
-
-/////////GIRIS?///////
-// let gir = document.querySelector(".gir");
-// let qeyd = document.querySelector(".qeyd");
-// let person = document.querySelector(".bi-person-circle")
-
-// let logout = document.querySelector("#trash");
-
-// let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
-// if(user){
-//   gir.innerHTML = `${user}`
-//   logout.style.display = "block";
-//   person.style.display = "block"
-//   qeyd.style.display = "none";
-// }
-// logout.addEventListener("click",()=>{
-//   localStorage.removeItem('currentUser');
-//   logout.style.display = "none"
-//   gir.innerHTML = "Giriş";
-//   person.style.display = "none"
-//   qeyd.style.display = "block";
-// })
 
 
 
@@ -287,8 +227,5 @@ const say3 = function(value, interval) {
   sayiyiArtir();
 };
 say3(1867, 0.001);
-
-
-
 
 

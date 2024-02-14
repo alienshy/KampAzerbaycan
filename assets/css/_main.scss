@@ -119,7 +119,7 @@ main {
     justify-content: center;
     gap: 20px;
     align-items:center;
-    .load {
+    #load {
       padding: 10px;
       display: flex;
       width: 170px;
@@ -136,7 +136,7 @@ main {
         transform: scale(1.1);
       }
     }
-    .show{
+    #show{
       padding: 10px;
       display: flex;
       width: 170px;

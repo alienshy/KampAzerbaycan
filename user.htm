@@ -65,10 +65,16 @@
       </menu>
     </nav>
     <div class="usersection">
-      <div class="usertable">
-        <h1 class="userh1"></h1>
-        <p class="useremail"></p>
-      </div>
+<div class="usertableanddiv" style="display: flex;">
+        <div class="usertable">
+          <h1 class="userh1"></h1>
+          <p class="useremail"></p>
+        </div>
+        <div class="usermaps" style="display: flex;">
+          <h1>Videoyu izleyerek kapmucun gondereceyiniz bolgenin google mapdaki yerini gosterecek linki gondere bilersiniz</h1>
+          <iframe width="70%" height="400px"  src="https://www.youtube.com/embed/8qswU360weQ" title="Getting the Google Maps iFrame URL for the Directions from one Location to Another" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+</div>
       <div class="formdiv">
         <form>
           <div class="imgsecme">
@@ -100,6 +106,12 @@
           <div class="infoform" style="width: 100%">
             <label for="infoform">Ətraflı</label>
             <textarea name="info" id="infoform"></textarea>
+            <label for="mekan">Link</label>
+            <input
+              type="text"
+              id="link"
+              placeholder="iframe linki"
+            />
           </div>
         </form>
         

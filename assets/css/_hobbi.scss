@@ -1,0 +1,368 @@
+.hobbi {
+    width: 100%;
+    padding: 200px 100px;
+
+    .havefuncon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+        gap: 30px;
+
+        .hobbiinfo {
+            border: 2px dashed $colorgreen;
+            border-radius: 20px;
+            padding: 20px;
+
+            h5 {
+                color: $colorgreen;
+                font-size: 20px;
+                font-family: "Lato", Sans-serif;
+
+
+            }
+
+        }
+
+        .fishingi {
+            display: flex;
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 20px;
+            gap: 20px;
+            box-shadow: inset;
+            align-items: flex-start;
+            border-bottom: 3px dashed $colorgreen;
+
+            .imgicon1 {
+                width: 20%;
+                height: auto;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 9999999px;
+                    object-fit: cover;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+
+            .texthobbi {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                text-align: justify;
+
+                gap: 20px;
+
+                h2 {
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                }
+            }
+        }
+
+        .wather {
+            display: flex;
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 20px;
+            gap: 20px;
+            box-shadow: inset;
+            align-items: flex-start;
+            border-bottom: 3px dashed $colorgreen;
+
+            .imgicon1 {
+                width: 20%;
+                height: auto;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 9999999px;
+                    object-fit: cover;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+
+            .texthobbi {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                gap: 20px;
+                text-align: justify;
+
+                h2 {
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                }
+            }
+        }
+
+        .velo {
+            display: flex;
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 20px;
+            gap: 20px;
+            box-shadow: inset;
+            align-items: flex-start;
+            border-bottom: 3px dashed $colorgreen;
+
+            .imgicon1 {
+                width: 20%;
+                height: auto;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 9999999px;
+                    object-fit: cover;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+
+            .texthobbi {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+
+                width: 80%;
+                gap: 20px;
+
+                h2 {
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                }
+            }
+        }
+
+        .barbek {
+            display: flex;
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 20px;
+            gap: 20px;
+            box-shadow: inset;
+            align-items: flex-start;
+            border-bottom: 3px dashed $colorgreen;
+
+            .imgicon1 {
+                width: 20%;
+                height: auto;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 9999999px;
+                    object-fit: cover;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+
+            .texthobbi {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+
+                width: 80%;
+                gap: 20px;
+
+                h2 {
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                }
+            }
+        }
+
+        .white {
+            display: flex;
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 20px;
+            gap: 20px;
+            box-shadow: inset;
+            align-items: flex-start;
+            border-bottom: 3px dashed $colorgreen;
+
+            .imgicon1 {
+                width: 20%;
+                height: auto;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 9999999px;
+                    object-fit: cover;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+
+            .texthobbi {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+
+                width: 80%;
+                gap: 20px;
+
+                h2 {
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $colorgreen;
+                    font-family: "Lato", Sans-serif;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px){
+    .hobbi {
+        width: 100%;
+        padding: 150px 10px;
+    
+        .havefuncon {
+            flex-direction: column;
+            text-align: justify;
+
+            .fishingi {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+    
+                .texthobbi {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+            }
+    
+            .wather {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+    
+                .texthobbi {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+            }
+    
+            .velo {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+    
+                .texthobbi {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+            }
+    
+            .barbek {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+    
+                .texthobbi {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+            }
+    
+            .white {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+    
+                .texthobbi {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}

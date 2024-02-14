@@ -832,7 +832,7 @@ main .loadbutton {
           align-items: center;
 }
 
-main .loadbutton .load {
+main .loadbutton #load {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,12 +854,12 @@ main .loadbutton .load {
   transition: 0.4s ease;
 }
 
-main .loadbutton .load:hover {
+main .loadbutton #load:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-main .loadbutton .show {
+main .loadbutton #show {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,7 +881,7 @@ main .loadbutton .show {
   transition: 0.4s ease;
 }
 
-main .loadbutton .show:hover {
+main .loadbutton #show:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -1024,7 +1024,17 @@ main .loadbutton .show:hover {
   padding: 150px 32px;
 }
 
-.usersection .usertable {
+.usersection .usertableanddiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.usersection .usertableanddiv .usertable {
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,13 +1055,43 @@ main .loadbutton .show:hover {
   gap: 30px;
 }
 
-.usersection .usertable a {
+.usersection .usertableanddiv .usertable a {
   font-size: 90px;
   color: #475d01;
 }
 
-.usersection .usertable a .presonuser {
+.usersection .usertableanddiv .usertable a .presonuser {
   font-size: 50px;
+}
+
+.usersection .usertableanddiv .usermaps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  width: 70%;
+}
+
+.usersection .usertableanddiv .usermaps iframe {
+  border-radius: 20px;
+}
+
+.usersection .usertableanddiv .usermaps h1 {
+  color: #475d01;
+  font-size: 20px;
+  font-family: "Lato", Sans-serif;
+  text-align: center;
+  width: 70%;
 }
 
 .usersection .formdiv form {
@@ -1187,6 +1227,14 @@ main .loadbutton .show:hover {
   height: 150px;
   font-size: 20px;
   padding: 10px;
+}
+
+.usersection .formdiv form .infoform input {
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2791,6 +2839,522 @@ body {
   }
   .detailshtmhtm #respond .allcommentdiv .allcomment {
     width: 100%;
+  }
+}
+
+.hobbi {
+  width: 100%;
+  padding: 200px 100px;
+}
+
+.hobbi .havefuncon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  gap: 30px;
+}
+
+.hobbi .havefuncon .hobbiinfo {
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.hobbi .havefuncon .hobbiinfo h5 {
+  color: #475d01;
+  font-size: 20px;
+  font-family: "Lato", Sans-serif;
+}
+
+.hobbi .havefuncon .fishingi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 20px;
+  gap: 20px;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 3px dashed #475d01;
+}
+
+.hobbi .havefuncon .fishingi .imgicon1 {
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.hobbi .havefuncon .fishingi .imgicon1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hobbi .havefuncon .fishingi .imgicon1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hobbi .havefuncon .fishingi .texthobbi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  text-align: justify;
+  gap: 20px;
+}
+
+.hobbi .havefuncon .fishingi .texthobbi h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 40px;
+}
+
+.hobbi .havefuncon .fishingi .texthobbi p {
+  font-size: 20px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+
+.hobbi .havefuncon .wather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 20px;
+  gap: 20px;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 3px dashed #475d01;
+}
+
+.hobbi .havefuncon .wather .imgicon1 {
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.hobbi .havefuncon .wather .imgicon1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hobbi .havefuncon .wather .imgicon1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hobbi .havefuncon .wather .texthobbi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  text-align: justify;
+}
+
+.hobbi .havefuncon .wather .texthobbi h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 40px;
+}
+
+.hobbi .havefuncon .wather .texthobbi p {
+  font-size: 20px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+
+.hobbi .havefuncon .velo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 20px;
+  gap: 20px;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 3px dashed #475d01;
+}
+
+.hobbi .havefuncon .velo .imgicon1 {
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.hobbi .havefuncon .velo .imgicon1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hobbi .havefuncon .velo .imgicon1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hobbi .havefuncon .velo .texthobbi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  width: 80%;
+  gap: 20px;
+}
+
+.hobbi .havefuncon .velo .texthobbi h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 40px;
+}
+
+.hobbi .havefuncon .velo .texthobbi p {
+  font-size: 20px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+
+.hobbi .havefuncon .barbek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 20px;
+  gap: 20px;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 3px dashed #475d01;
+}
+
+.hobbi .havefuncon .barbek .imgicon1 {
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.hobbi .havefuncon .barbek .imgicon1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hobbi .havefuncon .barbek .imgicon1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hobbi .havefuncon .barbek .texthobbi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  width: 80%;
+  gap: 20px;
+}
+
+.hobbi .havefuncon .barbek .texthobbi h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 40px;
+}
+
+.hobbi .havefuncon .barbek .texthobbi p {
+  font-size: 20px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+
+.hobbi .havefuncon .white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 20px;
+  gap: 20px;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 3px dashed #475d01;
+}
+
+.hobbi .havefuncon .white .imgicon1 {
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.hobbi .havefuncon .white .imgicon1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hobbi .havefuncon .white .imgicon1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hobbi .havefuncon .white .texthobbi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  width: 80%;
+  gap: 20px;
+}
+
+.hobbi .havefuncon .white .texthobbi h2 {
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 40px;
+}
+
+.hobbi .havefuncon .white .texthobbi p {
+  font-size: 20px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .hobbi {
+    width: 100%;
+    padding: 150px 10px;
+  }
+  .hobbi .havefuncon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: justify;
+  }
+  .hobbi .havefuncon .fishingi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .hobbi .havefuncon .fishingi .texthobbi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .hobbi .havefuncon .wather {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .hobbi .havefuncon .wather .texthobbi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .hobbi .havefuncon .velo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .hobbi .havefuncon .velo .texthobbi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .hobbi .havefuncon .barbek {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .hobbi .havefuncon .barbek .texthobbi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .hobbi .havefuncon .white {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .hobbi .havefuncon .white .texthobbi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00b894;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.category {
+  background-color: white;
+  border: dashed 2px #00b894;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+.category h2 {
+  color: #00b894;
+}
+
+.category p {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .category {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    width: calc(100% - 20px);
   }
 }
 /*# sourceMappingURL=style.css.map */
