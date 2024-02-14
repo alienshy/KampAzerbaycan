@@ -20,7 +20,7 @@
       width: 100%;
       thead,
       tbody {
-        width: 100%;
+        width: 100%;        
         tr,
         td,
         th {
@@ -29,15 +29,30 @@
           padding: 10px;
           font-family: "Lato", Sans-serif;
           border: 2px dashed $colorgreen;
-          font-size: 20px;
+
+
 
           i {
             cursor: pointer;
             font-family: "Lato", Sans-serif;
-            font-size: 20px;
+            font-size: 25px;
             color: $colorgreen;
-          }
+            p{
+              font-size: 10px;
+              position: absolute;
+              background-color:white;
+              padding: 20px;
+              border-radius:20px;
+              display: none;
+            }
+            &:hover{
+              p{
+                display: block;
+              }
+            }
+          } 
         }
+
       }
     }
   }
@@ -121,6 +136,93 @@
           transform: scale(1.1);
         }
       }
+    }
+  }
+}
+@media screen and (max-width:1200px) {
+  .admin {
+    width: 100%;
+    @include column;
+    gap: 100px;
+    .admintable {
+      width: 100%;
+      @include column;
+      gap: 30px;
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        width: 100%;
+        color: $colordarkgreen;
+        font-family: "Lato", Sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        thead,
+        tbody {
+          width: 100%;        
+          tr,
+          td,
+          th {
+            color: $colordarkgreen;
+            padding: 10px;
+            font-size: 15px;
+
+            i {
+              cursor: pointer;
+              font-family: "Lato", Sans-serif;
+              font-size: 15px;
+              color: $colorgreen;
+              p{
+                font-size: 10px;
+                position: absolute;
+                background-color:white;
+                padding: 20px;
+                border-radius:20px;
+                display: none;
+              }
+              &:hover{
+                p{
+                  display: block;
+                }
+              }
+            }
+          }
+  
+        }
+      }
+    }
+    .adminsection {
+      width: 100%;
+      @include column;
+      gap: 20px;
+      .admindiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .adminsectionimg {
+          width: 100%;
+          height: 400px;
+
+          img {
+            width: 100%;
+            border-radius: 20px;
+  
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .admintextdiv {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        
+      }
+
     }
   }
 }

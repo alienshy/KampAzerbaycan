@@ -16,12 +16,31 @@
       width: 25%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 70vh;
+      padding: 20px;
+      height: 40vh;
       border: 2px dashed $colorgreen;
       border-radius: 20px;
       gap: 30px;
+      i{
+        color:$colorgreen;
+        font-size: 100px;
+
+      }
+      .userh1{
+        color:$colorgreen;
+        font-size: 30px;
+        font-family: "Lato", Sans-serif;
+        text-align: center;
+        width: 70%;
+      }
+      .useremail{
+        color:$colorgreen;
+        font-size: 20px;
+        font-family: "Lato", Sans-serif;
+        text-align: center;
+        width: 70%;
+      }
       a{
         font-size: 90px;
         color:$colorgreen;

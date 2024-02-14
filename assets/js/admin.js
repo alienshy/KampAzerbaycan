@@ -13,6 +13,7 @@ async function getadmindata(){
             <td>${element.id}</td>
             <td>${element.name}</td>
             <td>${element.location}</td>
+            <td><i class="bi bi-geo-alt-fill"><p>${element.map}</p></i></td>
             <td><i class="bi bi-trash" onclick="deletedataid(${element.id})"></i></td>
         </tr>
             `
@@ -58,6 +59,7 @@ async function alladmindata(){
             <h1>${element.name}</h1>
             <h3>${element.location}</h3>
             <p>${element.info}</p>
+            <p>${element.map}</p>
             </div>
           </div>
           <div class="buttonadmin">
@@ -92,7 +94,8 @@ async function sendThisData(id){
             name: data.name,
             img: data.img,
             location: data.location,
-            info: data.info
+            info: data.info,
+            map: data.map
         })
         await axios.delete(url2 + id)
     } catch(error){

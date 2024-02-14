@@ -727,9 +727,9 @@ main #maincon {
   padding: 100px 32px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 25px;
 }
 
@@ -1043,16 +1043,35 @@ main .loadbutton #show:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  padding: 20px;
+  height: 40vh;
   border: 2px dashed #475d01;
   border-radius: 20px;
   gap: 30px;
+}
+
+.usersection .usertableanddiv .usertable i {
+  color: #475d01;
+  font-size: 100px;
+}
+
+.usersection .usertableanddiv .usertable .userh1 {
+  color: #475d01;
+  font-size: 30px;
+  font-family: "Lato", Sans-serif;
+  text-align: center;
+  width: 70%;
+}
+
+.usersection .usertableanddiv .usertable .useremail {
+  color: #475d01;
+  font-size: 20px;
+  font-family: "Lato", Sans-serif;
+  text-align: center;
+  width: 70%;
 }
 
 .usersection .usertableanddiv .usertable a {
@@ -2347,7 +2366,6 @@ footer .footercon .footerdiv2 .footerdiv3 div i {
   padding: 10px;
   font-family: "Lato", Sans-serif;
   border: 2px dashed #475d01;
-  font-size: 20px;
 }
 
 .admin .admintable table thead tr i,
@@ -2358,8 +2376,31 @@ footer .footercon .footerdiv2 .footerdiv3 div i {
 .admin .admintable table tbody th i {
   cursor: pointer;
   font-family: "Lato", Sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: #475d01;
+}
+
+.admin .admintable table thead tr i p,
+.admin .admintable table thead td i p,
+.admin .admintable table thead th i p,
+.admin .admintable table tbody tr i p,
+.admin .admintable table tbody td i p,
+.admin .admintable table tbody th i p {
+  font-size: 10px;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+}
+
+.admin .admintable table thead tr i:hover p,
+.admin .admintable table thead td i:hover p,
+.admin .admintable table thead th i:hover p,
+.admin .admintable table tbody tr i:hover p,
+.admin .admintable table tbody td i:hover p,
+.admin .admintable table tbody th i:hover p {
+  display: block;
 }
 
 .admin .adminsection {
@@ -2483,6 +2524,135 @@ footer .footercon .footerdiv2 .footerdiv3 div i {
 .admin .adminsection .buttonadmin button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+  .admin {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 100px;
+  }
+  .admin .admintable {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .admin .admintable h1 {
+    font-size: 45px;
+    text-align: center;
+    width: 100%;
+    color: #333D29;
+    font-family: "Lato", Sans-serif;
+  }
+  .admin .admintable table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .admin .admintable table thead,
+  .admin .admintable table tbody {
+    width: 100%;
+  }
+  .admin .admintable table thead tr,
+  .admin .admintable table thead td,
+  .admin .admintable table thead th,
+  .admin .admintable table tbody tr,
+  .admin .admintable table tbody td,
+  .admin .admintable table tbody th {
+    color: #333D29;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .admin .admintable table thead tr i,
+  .admin .admintable table thead td i,
+  .admin .admintable table thead th i,
+  .admin .admintable table tbody tr i,
+  .admin .admintable table tbody td i,
+  .admin .admintable table tbody th i {
+    cursor: pointer;
+    font-family: "Lato", Sans-serif;
+    font-size: 15px;
+    color: #475d01;
+  }
+  .admin .admintable table thead tr i p,
+  .admin .admintable table thead td i p,
+  .admin .admintable table thead th i p,
+  .admin .admintable table tbody tr i p,
+  .admin .admintable table tbody td i p,
+  .admin .admintable table tbody th i p {
+    font-size: 10px;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+  }
+  .admin .admintable table thead tr i:hover p,
+  .admin .admintable table thead td i:hover p,
+  .admin .admintable table thead th i:hover p,
+  .admin .admintable table tbody tr i:hover p,
+  .admin .admintable table tbody td i:hover p,
+  .admin .admintable table tbody th i:hover p {
+    display: block;
+  }
+  .admin .adminsection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .admin .adminsection .admindiv {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .admin .adminsection .admindiv .adminsectionimg {
+    width: 100%;
+    height: 400px;
+  }
+  .admin .adminsection .admindiv .adminsectionimg img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .admin .adminsection .admindiv .admintextdiv {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .reserved {
@@ -3306,14 +3476,34 @@ body {
   }
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+body .divxidmet {
+  padding: 20px;
+  margin: 20px;
+  border: 2px dashed #475d01;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+body .divxidmet h1 {
+  text-align: center;
+  color: #475d01;
+}
+
+body .divxidmet p {
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  color: #475d01;
 }
 
 header {
-  background-color: #00b894;
+  background-color: #475d01;
   color: white;
   text-align: center;
   padding: 20px;
@@ -3325,13 +3515,25 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 100px 10px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .category {
   background-color: white;
-  border: dashed 2px #00b894;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  border: dashed 2px #475d01;
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
@@ -3339,20 +3541,20 @@ header {
 }
 
 .category h2 {
-  color: #00b894;
+  color: #475d01;
 }
 
 .category p {
   color: #333;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .category {
     width: calc(50% - 20px);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .category {
     width: calc(100% - 20px);
   }

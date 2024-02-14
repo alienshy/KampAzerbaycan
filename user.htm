@@ -24,11 +24,15 @@
       </div>
       <ul>
         <a href="./index.htm">Ana Səhifə</a>
-        <a href="">Xidmətlər və Kateqoriyalar</a>
-        <a href="">Haqqımızda və Əlaqə</a>
+        <a href="./services.htm">Xidmətlər və Kateqoriyalar</a>
+        <a href="./aboutus.htm">Haqqımızda və Əlaqə</a>
+        <a href="" class="userProfil" >
+          <i class="bi bi-person-circle"  style="display: none; font-size: 40px">
+            <p class="username"></p>
+          </i></a>
         <a href="/login.htm" class="gir">Giriş</a>
         <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
-        <a id="trash" style="display: none">Çıxış</a>
+        <a id="trash" style="display: none;">Çıxış</a>
       </ul>
       <div class="icons">
         <a href=""> <i class="bi bi-facebook"></i></a>
@@ -39,20 +43,17 @@
       </div>
       <i class="bi bi-list"></i>
       <menu>
-        <ul>
+        <ul class="ulmenu">
           <a href="./index.htm">Ana Səhifə</a>
-          <a href="">Xidmətlər və Kateqoriyalar</a>
-          <a href="">Haqqımızda və Əlaqə</a>
-          <a href="./user.htm">
-            <i
-              class="bi bi-person-circle"
-              style="display: none; font-size: 40px"
-            >
-              <p class="username"></p> </i
-          ></a>
+          <a href="./services.htm">Xidmətlər və Kateqoriyalar</a>
+          <a href="./aboutus.htm">Haqqımızda və Əlaqə</a>
+          <a href="" class="userProfil" >
+            <i class="bi bi-person-circle">
+              <p class="username"></p>
+            </i></a>
           <a href="/login.htm" class="gir">Giriş</a>
           <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
-          <a id="trash" style="display: none">Çıxış</a>
+          <a id="trash" style="display: none;">Çıxış</a>
         </ul>
         <div class="icons">
           <a href=""> <i class="bi bi-facebook"></i></a>
@@ -67,6 +68,7 @@
     <div class="usersection">
 <div class="usertableanddiv" style="display: flex;">
         <div class="usertable">
+          <i class="bi bi-person-square"></i>
           <h1 class="userh1"></h1>
           <p class="useremail"></p>
         </div>
@@ -106,7 +108,7 @@
           <div class="infoform" style="width: 100%">
             <label for="infoform">Ətraflı</label>
             <textarea name="info" id="infoform"></textarea>
-            <label for="mekan">Link</label>
+            <label for="basqa">Link</label>
             <input
               type="text"
               id="link"
@@ -184,8 +186,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <!-- <script src="./assets/js/profil.js"></script> -->
-    <script src="./assets/js/profil.js"></script>
     <script src="./assets/js/user.js"></script>
   </body>
 </html>

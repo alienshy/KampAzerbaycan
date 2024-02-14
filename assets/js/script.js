@@ -71,7 +71,7 @@ async function getall(){
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
    <a href="./details.htm?id=${element.id}" class="details"> <button>
-   <i  class="bi bi-arrow-right-circle-fill"></i>Learn More 
+   <i  class="bi bi-arrow-right-circle-fill"></i>ətraflı 
     </button></a>
   </div>
     `
@@ -175,7 +175,7 @@ const say = function(value, interval) {
       let sayi = 0;
       function artir() {
           sayim1.innerHTML = sayi;
-          sayi += 3;
+          sayi += 4;
           if (sayi <= value) {
               setTimeout(artir, interval);
           }
@@ -184,7 +184,7 @@ const say = function(value, interval) {
   }
   sayiyiArtir();
 };
-say(3434, 0.001);
+say(8434, 0.001);
 
 
 
@@ -196,7 +196,7 @@ const say2 = function(value, interval) {
       let sayi = 0;
       function artir() {
           sayim2.innerHTML = sayi;
-          sayi += 3;
+          sayi += 4;
           if (sayi <= value) {
               setTimeout(artir, interval);
           }
@@ -205,7 +205,7 @@ const say2 = function(value, interval) {
   }
   sayiyiArtir();
 };
-say2(2344, 0.001);
+say2(5344, 0.001);
 
 
 
@@ -217,7 +217,7 @@ const say3 = function(value, interval) {
       let sayi = 0;
       function artir() {
           sayim3.innerHTML = sayi;
-          sayi += 3;
+          sayi += 5;
           if (sayi <= value) {
               setTimeout(artir, interval);
           }
@@ -226,6 +226,6 @@ const say3 = function(value, interval) {
   }
   sayiyiArtir();
 };
-say3(1867, 0.001);
+say3(9867, 0.001);
 
 
