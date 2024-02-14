@@ -9,14 +9,73 @@
       padding: 100px;
     @include column;
     @include center;
+    gap: 20px;
 
     h2{
         font-size: 40px;
         text-align: center;
+        color:$colorgreen;
     }
     form{
         @include column;
+        justify-content: center;
+        align-items:center;
         gap: 20px;
+        padding: 20px;
         width: 300px;
+        border: 2px dashed $colorgreen;
+        width: 30%;
+        border-radius: 20px;
+        @include column;
+        gap: 20px;
+        label{
+            width: 100%;
+            color:$colorgreen;
+            font-size: 20px;
+            font-family: "Lato", Sans-serif;
+        }
+        input{
+            width: 100%;
+            border: 1px dashed $colorgreen;
+            border-radius: 20px;
+            padding: 10px;
+            outline: none;
+            color:$colorgreen;
+        }
+        #submit{
+            width: 50%;
+            border: 1px solid $colorgreen;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 5px;
+            outline: none;
+            color:$colorgreen;
+            background-color:$colorbgcolor;
+            transition: 0.4s ease;
+            cursor: pointer;
+            &:hover{
+                background-color:$colorgreen;
+                color:white;
+
+            }
+        }
     }
+}
+@media screen and (max-width:1200px){
+    #register-form{
+        padding: 50px;
+        form{
+            width: 40%;
+        }
+    }
+    
+}
+@media screen and (max-width:768px){
+    #register-form{
+        padding: 50px;
+        form{
+            width: 90%;
+        }
+    }
+    
 }

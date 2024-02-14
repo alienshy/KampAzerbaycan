@@ -4,17 +4,21 @@ nav {
   @include spacebetween;
   position: absolute;
   z-index: 10000;
+
   div {
     @include center;
     gap: 10px;
+
     div {
       width: 70px;
       height: 70px;
+
       img {
         width: 100%;
         height: 100%;
       }
     }
+
     h1 {
       font-family: "Lato", Sans-serif;
       font-weight: 900;
@@ -22,74 +26,88 @@ nav {
       font-size: 23px;
     }
   }
+
   ul {
     @include spacebetween;
     width: 60%;
     gap: 22px;
-    #trash{
-      background-color:$colorgreen;
+
+    #trash {
+      background-color: $colorgreen;
       padding: 10px;
-      border-radius:20px;
+      border-radius: 20px;
       transition: 0.4s ease;
-      color:white;
+      color: white;
       cursor: pointer;
-      &:hover{
-        background-color:rgba(255, 255, 255,0.5);
-        border-radius:99999px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 99999px;
         color: $colorgreen;
       }
     }
-    .bi-person-circle{
+
+    .bi-person-circle {
       position: relative;
       padding: 10px 15px;
       @include center;
+      display: none;
       top: 4px;
       font-style: normal;
       transition: all 0.4s ease;
-      p{
-        pointer-events:none;
+
+      p {
+        pointer-events: none;
         position: absolute;
         padding: 20px;
-        border-radius:0px;
+        border-radius: 0px;
         opacity: 0;
         bottom: -55px;
         font-size: 16px;
         left: -100px;
       }
-      &:hover{
-        background-color:rgba(255, 255, 255,0.5);
-        border-radius:99999px;
-        p{
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 99999px;
+
+        p {
           opacity: 1;
-          border-radius:20px;
+          border-radius: 20px;
 
         }
 
       }
     }
+
     a {
       color: $colorgreen;
       font-size: 15px;
       font-family: "Courier New", Courier, monospace;
       font-weight: 800;
       transition: 0.4s ease;
+
       &:hover {
         color: $colorlightgreen;
       }
     }
   }
-  .icons{
+
+  .icons {
     display: flex;
-    gap:15px;
+    gap: 15px;
+
     i {
       color: $colorgreen;
       font-size: 25px;
       transition: 0.4s ease;
+
       &:hover {
         color: $colorlightgreen;
       }
     }
   }
+
   .bi-list {
     color: white;
     display: none;
@@ -98,11 +116,13 @@ nav {
     border-radius: 10px;
     background-color: $colorlightgreen;
     transition: 0.4s ease;
+
     &:hover {
       color: $colorlightgreen;
       background-color: white;
     }
   }
+
   menu {
     position: absolute;
     top: 0px;
@@ -110,13 +130,17 @@ nav {
     opacity: 0;
     pointer-events: none;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.4);
     right: 0px;
-    left: 0;
-    padding: 70px;
-    gap: 55px;
+    left: 0px;
+    gap: 20px;
     z-index: 100;
     transition: all 0.4s ease;
+    padding: 20px;
+
     .bi-x {
       position: absolute;
       color: $colorgreen;
@@ -125,40 +149,111 @@ nav {
       right: 1px;
 
       transition: 0.4s ease;
-      &:hover {
-        color: $colorlightgreen;
-      }
-    }
-    ul{
-      width:100%;
-      height: 100%;
-    a {
-      color: $colorgreen;
-      font-size: 25px;
-      font-family: "Lato", Sans-serif;
-      font-weight: 800;
-      transition: 0.4s ease;
 
       &:hover {
         color: $colorlightgreen;
       }
     }
-    div {
+
+    .ulmenu {
+      width: 100%;
       display: flex;
-      width: 200px;
-      justify-content: space-evenly;
-      i {
-        color: $colorgreen;
-        font-size: 35px;
-        transition: all 0.4s ease;
-        &:hover {
-          color: $colorlightgreen;
-          transform: rotateY(180deg);
+      flex-direction: column;
+      right: 0;
+      padding: 20px;
+      left: 0;
+
+      a {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      .userProfil {
+        .bi-person-circle {
+          position: relative;
+          padding: 10px 15px;
+          @include center;
+          display: none;
+          top: 4px;
+          font-style: normal;
+          transition: all 0.4s ease;
+    
+          p {
+            pointer-events: none;
+            position: absolute;
+            padding: 20px;
+            border-radius: 0px;
+            opacity: 0;
+            bottom: -55px;
+            font-size: 16px;
+            left: -100px;
+          }
+    
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 99999px;
+    
+            p {
+              opacity: 1;
+              border-radius: 20px;
+    
+            }
+    
+          }
         }
       }
-    }}
+
+      .gir {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+      }
+    }
+
+    .qeyd {
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    #trash {
+      background-color: $colorgreen;
+      padding: 10px;
+      border-radius: 20px;
+      transition: 0.4s ease;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 99999px;
+        color: $colorgreen;
+      }
+    }
+
+    .icons {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      i {
+        font-size: 30px;
+      }
+    }
   }
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 1300px) {
   nav {
@@ -167,17 +262,21 @@ nav {
     ul {
       display: none;
     }
-    .icons{
+
+    .icons {
       display: none;
     }
+
     .bi-list {
       display: flex;
       border: none;
     }
+
     menu {
       opacity: 0;
       pointer-events: none;
       transition: all 0.4s ease;
+
       .bi-x {
         position: absolute;
         top: 35px;
@@ -188,6 +287,7 @@ nav {
         border-radius: 13px;
         background-color: $colorlightgreen;
         transition: 0.4s ease;
+
         &:hover {
           color: $colorlightgreen;
           background-color: white;

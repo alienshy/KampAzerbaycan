@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/details.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>www.kampazərbaycan.com</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,28 +61,33 @@
       <i class="bi bi-x"></i>
     </menu>
   </nav>
-  <main class="main">
-    <div class="con maincon" id="maincon"></div>
-  </main>
-  <div id="respond">
+<div class="detailshtmhtm">
+    <main class="maindet">
+      <div class="con maincondet" id="maincondet"></div>
+    </main>
+    <div id="respond">
+      <div class="responddiv">
+        <h3>Komment elave edin</h3>
+        <form id="commentform">
+          <label for="comment_author" class="required">Your name</label>
+          <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+  
+          <label for="email" class="required">Your email;</label>
+          <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+  
+          <label for="comment" class="required">Your message</label>
+          <textarea name="comment" id="comment" rows="10" tabindex="4" required="required" maxlength="100"></textarea>
+          <button>Post comment</button>
+        </form>
+      </div>
+      <div class="allcommentdiv" >
+        <div class="allcomment" id="allCommentsContainer" style="display: flex; flex-direction:column;width: 100%; padding: 10px;gap: 20px; border:2px solid #66b400; background-color:white; border-radius:20px;">
 
-    <h3>Leave a Comment</h3>
+        </div>
+      </div>
+    </div>
+</div>
 
-    <form id="commentform">
-
-      <label for="comment_author" class="required">Your name</label>
-      <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
-
-      <label for="email" class="required">Your email;</label>
-      <input type="email" name="email" id="email" value="" tabindex="2" required="required">
-
-      <label for="comment" class="required">Your message</label>
-      <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
-      <button>Post comment</button>
-
-    </form>
-
-  </div>
   <footer>
     <div class="con footercon">
       <div class="footerdiv1">

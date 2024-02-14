@@ -107,6 +107,7 @@ nav ul .bi-person-circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
   top: 4px;
   font-style: normal;
   -webkit-transition: all 0.4s ease;
@@ -193,14 +194,21 @@ nav menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
   right: 0px;
-  left: 0;
-  padding: 70px;
-  gap: 55px;
+  left: 0px;
+  gap: 20px;
   z-index: 100;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  padding: 20px;
 }
 
 nav menu .bi-x {
@@ -217,45 +225,125 @@ nav menu .bi-x:hover {
   color: #66b400;
 }
 
-nav menu ul {
+nav menu .ulmenu {
   width: 100%;
-  height: 100%;
-}
-
-nav menu ul a {
-  color: #475d01;
-  font-size: 25px;
-  font-family: "Lato", Sans-serif;
-  font-weight: 800;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-}
-
-nav menu ul a:hover {
-  color: #66b400;
-}
-
-nav menu ul div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  padding: 20px;
+  left: 0;
 }
 
-nav menu ul div i {
-  color: #475d01;
-  font-size: 35px;
+nav menu .ulmenu a {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+nav menu .ulmenu .userProfil .bi-person-circle {
+  position: relative;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  top: 4px;
+  font-style: normal;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-nav menu ul div i:hover {
-  color: #66b400;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+nav menu .ulmenu .userProfil .bi-person-circle p {
+  pointer-events: none;
+  position: absolute;
+  padding: 20px;
+  border-radius: 0px;
+  opacity: 0;
+  bottom: -55px;
+  font-size: 16px;
+  left: -100px;
+}
+
+nav menu .ulmenu .userProfil .bi-person-circle:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+}
+
+nav menu .ulmenu .userProfil .bi-person-circle:hover p {
+  opacity: 1;
+  border-radius: 20px;
+}
+
+nav menu .ulmenu .gir {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+nav menu .qeyd {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+nav menu #trash {
+  background-color: #475d01;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: white;
+  cursor: pointer;
+}
+
+nav menu #trash:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+  color: #475d01;
+}
+
+nav menu .icons {
+  width: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav menu .icons i {
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -375,6 +463,12 @@ nav menu.show {
 #login-form .form2 #submit:hover {
   background-color: #475d01;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  #login-form .form2 {
+    width: 50%;
+  }
 }
 
 section {
@@ -834,11 +928,13 @@ main .loadbutton .show:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 
 #register-form h2 {
   font-size: 40px;
   text-align: center;
+  color: #475d01;
 }
 
 #register-form form {
@@ -849,8 +945,74 @@ main .loadbutton .show:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
+  padding: 20px;
   width: 300px;
+  border: 2px dashed #475d01;
+  width: 30%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#register-form form label {
+  width: 100%;
+  color: #475d01;
+  font-size: 20px;
+  font-family: "Lato", Sans-serif;
+}
+
+#register-form form input {
+  width: 100%;
+  border: 1px dashed #475d01;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  color: #475d01;
+}
+
+#register-form form #submit {
+  width: 50%;
+  border: 1px solid #475d01;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  color: #475d01;
+  background-color: #eaeccd;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+#register-form form #submit:hover {
+  background-color: #475d01;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  #register-form {
+    padding: 50px;
+  }
+  #register-form form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #register-form {
+    padding: 50px;
+  }
+  #register-form form {
+    width: 90%;
+  }
 }
 
 .usersection {
@@ -2387,6 +2549,248 @@ body {
   }
   .aboutusdiv .haqqimizda h2, .aboutusdiv .elaqe h2, .aboutusdiv .tarix h2 {
     color: #333D29;
+  }
+}
+
+.detailshtmhtm {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detailshtmhtm .maindet {
+  width: 100%;
+  padding: 200px 32px;
+}
+
+.detailshtmhtm .maindet .maincondet {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detailshtmhtm .maindet .maincondet .cards {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+
+.detailshtmhtm .maindet .maincondet .cards .cardsimg {
+  width: 100%;
+  height: 400px;
+}
+
+.detailshtmhtm .maindet .maincondet .cards .cardsimg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.detailshtmhtm .maindet .maincondet .cards iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.detailshtmhtm .maindet .maincondet .textdetails {
+  width: 50%;
+  padding: 50px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.detailshtmhtm .maindet .maincondet .textdetails .cardsname {
+  color: #475d01;
+  font-size: 40px;
+}
+
+.detailshtmhtm .maindet .maincondet .textdetails span {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detailshtmhtm .maindet .maincondet .textdetails span i {
+  font-size: 30px;
+  color: #475d01;
+}
+
+.detailshtmhtm .maindet .maincondet .textdetails span h4 {
+  font-size: 30px;
+  color: #475d01;
+}
+
+.detailshtmhtm .maindet .maincondet .textdetails p {
+  font-size: 20px;
+  border: 2px dashed #475d01;
+  width: 100%;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 20px;
+  color: #475d01;
+}
+
+.detailshtmhtm #respond {
+  padding: 20px;
+  width: 100%;
+  margin-top: -200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  background-color: #eaeccd;
+}
+
+.detailshtmhtm #respond .responddiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detailshtmhtm #respond .responddiv h3 {
+  width: 100%;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 40px;
+}
+
+.detailshtmhtm #respond .responddiv form {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #eaeccd;
+  border: 2px dashed #475d01;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.detailshtmhtm #respond .responddiv form .required {
+  width: 100%;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px;
+}
+
+.detailshtmhtm #respond .responddiv form input,
+.detailshtmhtm #respond .responddiv form textarea {
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+  border: 2px dashed #475d01;
+  padding: 10px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px;
+}
+
+.detailshtmhtm #respond .responddiv form button {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px dashed #475d01;
+  width: 200px;
+  color: #475d01;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.detailshtmhtm #respond .allcommentdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 30px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .detailshtmhtm .maindet {
+    padding: 100px 0px;
+  }
+  .detailshtmhtm .maindet .maincondet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .detailshtmhtm .maindet .maincondet .cards {
+    padding: 10px;
+    width: 100%;
+  }
+  .detailshtmhtm .maindet .maincondet .textdetails {
+    width: 100%;
+    padding: 10px;
+  }
+  .detailshtmhtm .maindet .maincondet .textdetails .cardsimg {
+    width: 100%;
+  }
+  .detailshtmhtm .maindet .maincondet .textdetails .cardsimg img {
+    width: 100%;
+  }
+  .detailshtmhtm #respond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detailshtmhtm #respond .responddiv {
+    width: 100%;
+    margin-top: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detailshtmhtm #respond .allcommentdiv {
+    width: 100%;
+  }
+  .detailshtmhtm #respond .allcommentdiv .allcomment {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
