@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -234,9 +235,29 @@ nav menu .ulmenu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   right: 0;
   padding: 20px;
   left: 0;
+}
+
+nav menu .ulmenu #trash1 {
+  background-color: #475d01;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: white;
+  cursor: pointer;
+}
+
+nav menu .ulmenu #trash1:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+  color: #475d01;
 }
 
 nav menu .ulmenu a {
@@ -250,7 +271,32 @@ nav menu .ulmenu a {
   width: 100%;
 }
 
-nav menu .ulmenu .userProfil .bi-person-circle {
+nav menu .ulmenu .userProfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  left: -20px;
+}
+
+nav menu .ulmenu .userProfil #trash {
+  background-color: #475d01;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: white;
+  cursor: pointer;
+}
+
+nav menu .ulmenu .userProfil #trash:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 99999px;
+  color: #475d01;
+}
+
+nav menu .ulmenu .userProfil .circle {
   position: relative;
   padding: 10px 15px;
   display: -webkit-box;
@@ -262,35 +308,38 @@ nav menu .ulmenu .userProfil .bi-person-circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 90px;
   display: none;
   top: 4px;
+  left: 0px;
   font-style: normal;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-nav menu .ulmenu .userProfil .bi-person-circle p {
+nav menu .ulmenu .userProfil .circle p {
   pointer-events: none;
   position: absolute;
+  color: #475d01;
   padding: 20px;
   border-radius: 0px;
   opacity: 0;
-  bottom: -55px;
-  font-size: 16px;
-  left: -100px;
+  bottom: 30px;
+  font-size: 20px;
+  left: 120px;
 }
 
-nav menu .ulmenu .userProfil .bi-person-circle:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+nav menu .ulmenu .userProfil .circle:hover {
+  background-color: rgba(117, 117, 117, 0.5);
   border-radius: 99999px;
 }
 
-nav menu .ulmenu .userProfil .bi-person-circle:hover p {
+nav menu .ulmenu .userProfil .circle:hover p {
   opacity: 1;
   border-radius: 20px;
 }
 
-nav menu .ulmenu .gir {
+nav menu .ulmenu .gir1 {
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,7 +350,7 @@ nav menu .ulmenu .gir {
   width: 100%;
 }
 
-nav menu .qeyd {
+nav menu .qeyd1 {
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +380,8 @@ nav menu #trash:hover {
 nav menu .icons {
   width: 100%;
   padding: 30px;
+  position: relative;
+  left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,6 +456,11 @@ nav menu.show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 #login-form .form2 {
@@ -461,6 +517,25 @@ nav menu.show {
 }
 
 #login-form .form2 #submit:hover {
+  background-color: #475d01;
+  color: white;
+}
+
+#login-form a button {
+  width: 150px;
+  border: 1px solid #475d01;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  color: #475d01;
+  background-color: #eaeccd;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+#login-form a button:hover {
   background-color: #475d01;
   color: white;
 }
@@ -997,6 +1072,25 @@ main .loadbutton #show:hover {
   color: white;
 }
 
+#register-form a button {
+  width: 150px;
+  border: 1px solid #475d01;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  color: #475d01;
+  background-color: #eaeccd;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+#register-form a button:hover {
+  background-color: #475d01;
+  color: white;
+}
+
 @media screen and (max-width: 1200px) {
   #register-form {
     padding: 50px;
@@ -1259,14 +1353,52 @@ main .loadbutton #show:hover {
 @media screen and (max-width: 1200px) {
   .usersection {
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(189, 191, 166, 0.9)), to(rgba(189, 191, 166, 0.9))), url("/assets/img/01-Converted-01.png");
-    background: linear-gradient(rgba(189, 191, 166, 0.9), rgba(189, 191, 166, 0.9)), url("/assets/img/01-Converted-01.png");
-    background-size: contain;
-    padding: 20px;
-    padding: 150px 32px;
   }
-  .usersection .usertable {
-    width: 25%;
+  .usersection .usertableanddiv {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .usersection .usertableanddiv .usertable {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .usersection .usertableanddiv .usertable .userh1 {
+    font-size: 30px;
+    text-align: center;
+    width: 70%;
+  }
+  .usersection .usertableanddiv .usertable .useremail {
+    width: 70%;
+  }
+  .usersection .usertableanddiv .usertable a {
+    font-size: 90px;
+    color: #475d01;
+  }
+  .usersection .usertableanddiv .usertable a .presonuser {
+    font-size: 50px;
+  }
+  .usersection .usertableanddiv .usermaps {
+    gap: 20px;
+    width: 100%;
+  }
+  .usersection .usertableanddiv .usermaps iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .usersection .usertableanddiv .usermaps h1 {
+    width: 100%;
+  }
+  .usersection .formdiv form {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1274,32 +1406,6 @@ main .loadbutton #show:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 70vh;
-    border: 2px dashed #475d01;
-    border-radius: 20px;
-    gap: 30px;
-  }
-  .usersection .usertable a {
-    font-size: 90px;
-    color: #475d01;
-  }
-  .usersection .usertable a .presonuser {
-    font-size: 50px;
-  }
-  .usersection .formdiv form {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 100%;
   }
   .usersection .formdiv form .imgsecme {
@@ -1311,7 +1417,7 @@ main .loadbutton #show:hover {
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
-    width: 50%;
+    width: 100%;
   }
   .usersection .formdiv form .imgsecme label {
     color: #475d01;
@@ -1349,7 +1455,7 @@ main .loadbutton #show:hover {
        object-fit: cover;
   }
   .usersection .formdiv form .textform {
-    width: 50%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1358,7 +1464,7 @@ main .loadbutton #show:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    padding: 50px;
+    padding: 10px;
   }
   .usersection .formdiv form .textform label {
     color: #475d01;
@@ -1411,6 +1517,13 @@ main .loadbutton #show:hover {
     height: 150px;
     font-size: 20px;
     padding: 10px;
+  }
+  .usersection .formdiv form .infoform input {
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px dashed #475d01;
+    border-radius: 20px;
   }
 }
 
@@ -3476,7 +3589,11 @@ body {
   }
 }
 
-body .divxidmet {
+.hersey {
+  padding-top: 100px;
+}
+
+.hersey .divxidmet {
   padding: 20px;
   margin: 20px;
   border: 2px dashed #475d01;
@@ -3491,12 +3608,12 @@ body .divxidmet {
   border-radius: 20px;
 }
 
-body .divxidmet h1 {
+.hersey .divxidmet h1 {
   text-align: center;
   color: #475d01;
 }
 
-body .divxidmet p {
+.hersey .divxidmet p {
   font-family: 'Lato', sans-serif;
   text-align: justify;
   color: #475d01;
@@ -3506,7 +3623,7 @@ header {
   background-color: #475d01;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .categories {
@@ -3558,5 +3675,12 @@ header {
   .category {
     width: calc(100% - 20px);
   }
+}
+
+.iframe {
+  width: 100%;
+  height: 400px;
+  /* istədiyiniz hündürlüyü təyin edin */
+  border: 0;
 }
 /*# sourceMappingURL=style.css.map */

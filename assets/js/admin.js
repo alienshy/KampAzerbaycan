@@ -95,7 +95,9 @@ async function sendThisData(id){
             img: data.img,
             location: data.location,
             info: data.info,
-            map: data.map
+            map: data.map,
+            comments: []
+
         })
         await axios.delete(url2 + id)
     } catch(error){

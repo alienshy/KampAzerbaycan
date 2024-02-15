@@ -7,6 +7,8 @@
       ),
       url("/assets/img/01-Converted-01.png");
     @include center;
+    flex-direction: column;
+    gap: 20px;
     .form2{
         height: 300px;
         border: 2px dashed $colorgreen;
@@ -37,6 +39,25 @@
         }
         #submit{
             width: 50%;
+            border: 1px solid $colorgreen;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 5px;
+            outline: none;
+            color:$colorgreen;
+            background-color:$colorbgcolor;
+            transition: 0.4s ease;
+            cursor: pointer;
+            &:hover{
+                background-color:$colorgreen;
+                color:white;
+
+            }
+        }
+    }
+    a{
+        button{
+            width: 150px;
             border: 1px solid $colorgreen;
             border-radius: 20px;
             font-size: 20px;

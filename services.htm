@@ -5,86 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamp Yerləri</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:wght@800&family=Playpen+Sans:wght@800&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 </head>
 <body>
-    <header>
-        <h1>Kamp Yerləri top 6</h1>
-    </header>
-    <section class="categories">
-        <div class="category">
-            <h2>Göy Göl</h2>
-            <p>Azərbaycanın gözəl göllərindən biri olan Göy Göl kamp yerində təmiz havadan zövq alın.</p>
-            <div style="width: 100%;
-            height: 300px;">
-                <img src="./assets/img/download.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
-            </div>
-        </div>
-        <div class="category">
-            <h2>İsmayıllı Şahdağ Milli Parkı</h2>
-            <p>Doğa sevgililəri üçün ideal olan İsmayıllı Şahdağ Milli Parkında şahane kamp təşkil edə bilərsiniz.</p>
-            <div style="width: 100%;
-            height: 300px;">
-                <img src="./assets/img/360_F_92801612_m0id46ab4ETCswIodLMkqGEKSHuTxo2a.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Tufandag Dağları</h2>
-            <p>Quba rayonunda yerləşən Tufandağ, gözəl təbiət manzaraları və sərin hava ilə meşhurdur.</p>
-            <div style="width: 100%;
-            height: 300px;">
-                <img src="./assets/img/180bdf0e-525c-4035-be92-8dccaf4fb6b9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Lənkəran Sahili</h2>
-            <p>Əfqanıstan sərhədində olan Lənkəran sahilində, səhər xüşkünçün ideal bir kamp yeri.</p>
-            <div style="width: 100%;
-            height: 300px;">
-                <img src="./assets/img/unnamed.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Göygöl Milli Parkı</h2>
-            <p>Göygöl Milli Parkı, suvarma gölləri və təbiəti ilə məşhurdur.</p>
-            <div style="width: 100%;
-            height: 300px;">
-                <img src="./assets/img/azerbaijan-goygol.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Yanar Dağ</h2>
-            <p>Yanar Dağ, Ağcabədi rayonunda yerləşir və daima yanan doğal bir yanardağdır.</p>
-            <div style="width: 100%;
-            height: 300px;">
-                <img src="./assets/img/exursia_v_yanardag.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
-            </div>
-        </div>
-    </section>
-    <div class="divxidmet">
-        <h1>Xüsusi Doğaçlama Kampı</h1>
-
-        <p>
-            Xoş gəlmisiniz! Xüsusi Doğaçlama Kampı, doğanın qollarında unikal təcrübələr və yaratıcı səhnə performansları üçün bir platformadır.
-            Biz burada müxtəlif yaş qruplarından insanlara doğanın güzəlliyini, yaratıcı səhnə təcrübəsini və maraqli macəraları təqdim edirik.
-        </p>
-    
-        <p>
-            Bizim kamplarımız həm də böyük şəhərlərin qorucu tərəfindən tamamilə müstəqil olan, doğal və təbii ətraflarda yerləşir.
-            Hər kamp, ətrafındakı doğa ilə bütünləşməyə nail olmağınızı və yaratıcı potensialınızı artırmağınızı təmin edir.
-        </p>
-    
-        <p>
-            Əgər siz də doğada özünüzü təbii bir ətrafda ifadə etmək, yaratıcı səhnə performansları təcrübə etmək və eyni zamanda maraqli insanlarla tanış olmaq istəyirsinizsə,
-            Xüsusi Doğaçlama Kampı tam sizin üçün! Gəlin və birlikdə doğanın qollarında əyləncəli və yararlı bir səyahətə başlayaq!
-        </p>
-    
-        <p>
-            Qeydiyyat və əlavə məlumat üçün bizimlə əlaqə saxlayın. Sizi kampımızda görmək üçün sabırsızlanırıq!
-        </p>
-        
+  <nav>
+    <div>
+      <div><img src="./assets/img/kampazərbaycanlogo.jpg" alt="" /></div>
+      <a href="./index.htm"><h1>KampAzərbaycan</h1></a>
     </div>
+    <ul>
+      <a href="./index.htm">Ana Səhifə</a>
+      <a href="./services.htm">Xidmətlər və Kateqoriyalar</a>
+      <a href="./aboutus.htm">Haqqımızda və Əlaqə</a>
+      <a href="" class="userProfil" >
+        <i class="bi bi-person-circle"  style="display: none; font-size: 40px">
+          <p class="username"></p>
+        </i></a>
+      <a href="/login.htm" class="gir">Giriş</a>
+      <a href="./singup.htm" class="qeyd">Qeydiyyat</a>
+      <a id="trash" style="display: none;">Çıxış</a>
+    </ul>
+    <div class="icons">
+      <a href=""> <i class="bi bi-facebook"></i></a>
+      <a href="https://instagram.com/alisahverdiyew"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <a href=""><i class="bi bi-twitter"></i></a>
+    </div>
+    <i class="bi bi-list"></i>
+    <menu>
+      <ul class="ulmenu">
+        <a href="./index.htm">Ana Səhifə</a>
+        <a href="./services.htm">Xidmətlər və Kateqoriyalar</a>
+        <a href="./aboutus.htm">Haqqımızda və Əlaqə</a>
+        <a href="" class="userProfil" >
+          <i class="bi bi-person-circle circle">
+            <p class="username1"></p>
+          </i></a>
+        <a href="/login.htm" class="gir1">Giriş</a>
+        <a href="./singup.htm" class="qeyd1">Qeydiyyat</a>
+        <a id="trash1" style="display: none;">Çıxış</a>
+      </ul>
+      <div class="icons">
+        <a href=""> <i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/alisahverdiyew"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+      </div>
+      <i class="bi bi-x"></i>
+    </menu>
+  </nav>
+  <div class="hersey">
+        <header>
+            <h1>Kamp Yerləri top 6</h1>
+        </header>
+        <section class="categories">
+            <div class="category">
+                <h2>Göy Göl</h2>
+                <p>Azərbaycanın gözəl göllərindən biri olan Göy Göl kamp yerində təmiz havadan zövq alın.</p>
+                <div style="width: 100%;
+                height: 300px;">
+                    <img src="./assets/img/download.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
+                </div>
+            </div>
+            <div class="category">
+                <h2>İsmayıllı Şahdağ Milli Parkı</h2>
+                <p>Doğa sevgililəri üçün ideal olan İsmayıllı Şahdağ Milli Parkında şahane kamp təşkil edə bilərsiniz.</p>
+                <div style="width: 100%;
+                height: 300px;">
+                    <img src="./assets/img/360_F_92801612_m0id46ab4ETCswIodLMkqGEKSHuTxo2a.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
+                </div>
+            </div>
+            <div class="category">
+                <h2>Tufandag Dağları</h2>
+                <p>Quba rayonunda yerləşən Tufandağ, gözəl təbiət manzaraları və sərin hava ilə meşhurdur.</p>
+                <div style="width: 100%;
+                height: 300px;">
+                    <img src="./assets/img/180bdf0e-525c-4035-be92-8dccaf4fb6b9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
+                </div>
+            </div>
+            <div class="category">
+                <h2>Lənkəran Sahili</h2>
+                <p>Əfqanıstan sərhədində olan Lənkəran sahilində, səhər xüşkünçün ideal bir kamp yeri.</p>
+                <div style="width: 100%;
+                height: 300px;">
+                    <img src="./assets/img/unnamed.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
+                </div>
+            </div>
+            <div class="category">
+                <h2>Göygöl Milli Parkı</h2>
+                <p>Göygöl Milli Parkı, suvarma gölləri və təbiəti ilə məşhurdur.</p>
+                <div style="width: 100%;
+                height: 300px;">
+                    <img src="./assets/img/azerbaijan-goygol.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
+                </div>
+            </div>
+            <div class="category">
+                <h2>Yanar Dağ</h2>
+                <p>Yanar Dağ, Ağcabədi rayonunda yerləşir və daima yanan doğal bir yanardağdır.</p>
+                <div style="width: 100%;
+                height: 300px;">
+                    <img src="./assets/img/exursia_v_yanardag.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius:20px;">
+                </div>
+            </div>
+        </section>
+        <div class="divxidmet">
+            <h1>Xüsusi Doğaçlama Kampı</h1>
+    
+            <p>
+                Xoş gəlmisiniz! Xüsusi Doğaçlama Kampı, doğanın qollarında unikal təcrübələr və yaratıcı səhnə performansları üçün bir platformadır.
+                Biz burada müxtəlif yaş qruplarından insanlara doğanın güzəlliyini, yaratıcı səhnə təcrübəsini və maraqli macəraları təqdim edirik.
+            </p>
+        
+            <p>
+                Bizim kamplarımız həm də böyük şəhərlərin qorucu tərəfindən tamamilə müstəqil olan, doğal və təbii ətraflarda yerləşir.
+                Hər kamp, ətrafındakı doğa ilə bütünləşməyə nail olmağınızı və yaratıcı potensialınızı artırmağınızı təmin edir.
+            </p>
+        
+            <p>
+                Əgər siz də doğada özünüzü təbii bir ətrafda ifadə etmək, yaratıcı səhnə performansları təcrübə etmək və eyni zamanda maraqli insanlarla tanış olmaq istəyirsinizsə,
+                Xüsusi Doğaçlama Kampı tam sizin üçün! Gəlin və birlikdə doğanın qollarında əyləncəli və yararlı bir səyahətə başlayaq!
+            </p>
+        
+            <p>
+                Qeydiyyat və əlavə məlumat üçün bizimlə əlaqə saxlayın. Sizi kampımızda görmək üçün sabırsızlanırıq!
+            </p>
+            
+        </div>
+  </div>
+  <footer>
+    <div class="con footercon">
+      <div class="footerdiv1">
+        <div>
+          <div><img src="./assets/img/kampazərbaycanlogo.jpg" alt="" /></div>
+          <a href="./index.htm"><h1>KampAzərbaycan</h1></a>
+        </div>
+        <p>
+          Düzgün yerdə kapm qurmaq istirahət etmək hər bir kəsin
+          arzusudur.Təhlükələrdən uzaq durmaq üçün araşdırmaq və kanp edəcəyin
+          yeri təhlil etmək istəyirsənsə onda gecikmədən bizə qoşul.
+        </p>
+        <div class="icons">
+          <a href=""> <i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/alisahverdiyew"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href=""><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footerdiv2">
+        <div class="contact">
+          <a>
+            <span
+              ><i class="bi bi-phone"></i>
+              <h2>Phone</h2>
+              <p>(+994)-50-765-0828</p></span
+            > </a
+          ><a>
+            <span
+              ><i class="bi bi-envelope-at-fill"></i>
+              <h2>kampaz@gmail.com</h2></span
+            > </a
+          ><a>
+            <span
+              ><i class="bi bi-geo-alt-fill"></i>
+              <h1>Addres</h1>
+              <p>Code Academy</p></span
+            >
+          </a>
+        </div>
+        <hr />
+        <div class="footerdiv3">
+          <div>
+            <h1>Naviqasiya</h1>
+            <a href="./index.htm">Ana Səhifə</a>
+            <a href="./services.htm">Xidmətlər və Kateqoriyalar</a>
+            <a href="./aboutus.htm">Haqqımızda və Əlaqə</a>
+          </div>
+          <div>
+            <a href="./login.htm"><h1>Sürətli keçid</h1></a>
+            <a href="./aboutus.htm">Bizimlə əlaqə saxlayın</a>
+            <a href="./">Tez-tez verilən suallar</a>
+            <a href="./admin.htm">Bloq</a>
+            <a>Qalereya</a>
+            <a>Qiymətləndirmə</a>
+          </div>
+          <div>
+            <h1>İş saatları</h1>
+            <i class="bi bi-clock-fill"> Bazar ertəsi - Cümə: 7:00-17:00</i>
+            <i class="bi bi-clock-fill"> Şənbə 9AM-3PM</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/js/profil.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
 
-</body>
-</html>

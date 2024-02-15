@@ -159,68 +159,37 @@ nav {
       width: 100%;
       display: flex;
       flex-direction: column;
+      align-items:flex-start;
       right: 0;
       padding: 20px;
       left: 0;
-
+      #trash1 {
+        background-color: $colorgreen;
+        width: 100px;
+        padding: 10px;
+        border-radius: 20px;
+        transition: 0.4s ease;
+        color: white;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 99999px;
+          color: $colorgreen;
+        }
+      }
       a {
         font-size: 20px;
         display: flex;
         justify-content: flex-start;
         width: 100%;
       }
-
       .userProfil {
-        .bi-person-circle {
-          position: relative;
-          padding: 10px 15px;
-          @include center;
-          display: none;
-          top: 4px;
-          font-style: normal;
-          transition: all 0.4s ease;
-    
-          p {
-            pointer-events: none;
-            position: absolute;
-            padding: 20px;
-            border-radius: 0px;
-            opacity: 0;
-            bottom: -55px;
-            font-size: 16px;
-            left: -100px;
-          }
-    
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 99999px;
-    
-            p {
-              opacity: 1;
-              border-radius: 20px;
-    
-            }
-    
-          }
-        }
-      }
-
-      .gir {
-        font-size: 20px;
         display: flex;
-        justify-content: flex-start;
+        position: relative;
         width: 100%;
-      }
-    }
-
-    .qeyd {
-      font-size: 20px;
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
-    }
-
-    #trash {
+        left: -20px;
+            #trash {
       background-color: $colorgreen;
       padding: 10px;
       border-radius: 20px;
@@ -234,10 +203,75 @@ nav {
         color: $colorgreen;
       }
     }
+        .circle {
+          position: relative;
+          padding: 10px 15px;
+          @include center;
+          font-size: 90px;
+          display: none;
+          top: 4px;
+          left: 0px;
+          font-style: normal;
+          transition: all 0.4s ease;
+          p {
+            pointer-events: none;
+            position: absolute;
+            color: $colorgreen;
+            padding: 20px;
+            border-radius: 0px;
+            opacity: 0;
+            bottom: 30px;
 
+            font-size: 20px;
+            left: 120px;
+          }
+    
+          &:hover {
+            background-color: rgba(117, 117, 117, 0.5);
+            border-radius: 99999px;
+    
+            p {
+              opacity: 1;
+              border-radius: 20px;
+    
+            }
+    
+          }
+        }
+      }
+
+      .gir1 {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+      }
+    }
+
+    .qeyd1 {
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    #trash {
+      background-color: $colorgreen;
+      padding: 10px;
+      border-radius: 20px;
+      transition: 0.4s ease;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 99999px;
+        color: $colorgreen;
+      }
+    }
     .icons {
       width: 100%;
       padding: 30px;
+      position: relative;
+      left: 20px;
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;

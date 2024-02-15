@@ -1,4 +1,5 @@
-body {
+.hersey {
+    padding-top:  100px;
     .divxidmet {
         padding: 20px;
         margin: 20px;
@@ -28,7 +29,7 @@ header {
     background-color: $colorgreen;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
 
 }
 
@@ -70,4 +71,9 @@ header {
     .category {
         width: calc(100% - 20px);
     }
+}
+.iframe {
+    width: 100%;
+    height: 400px; /* istədiyiniz hündürlüyü təyin edin */
+    border: 0;
 }

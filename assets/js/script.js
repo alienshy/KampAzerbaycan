@@ -1,10 +1,6 @@
 ///////url////
 let url = "http://localhost:3000/maps"
-
-
-
-
-
+console.log('kjkkl');
 //////MENU/////
 let menu = document.querySelector("menu")
 document.querySelector(".bi-list").addEventListener("click",()=>{
@@ -157,9 +153,19 @@ modalclick.addEventListener("click",()=>{
     modaldiv.style.display = "flex";
   }, 200);
 })
+
 window.addEventListener("click",()=>{
-  modaldiv.style.display = "none";
+  if(modaldiv.style.display == "flex"){
+    modaldiv.style.display = "none";
+    window.location.reload()
+  }
+
 })
+
+
+
+
+
 window.addEventListener("resize",()=>{
   if(window.innerWidth < 786){
     modaldiv.style.display = "none";
