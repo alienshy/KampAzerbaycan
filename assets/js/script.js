@@ -76,6 +76,28 @@ async function getall(){
 getall()
 
 
+let galerycon = document.querySelector(".galerycon")
+
+////galery/////
+
+
+async function getall5(){
+  let res = await axios.get(url)
+  let data = await res.data
+  copy = data
+  galerycon.innerHTML=""
+  filter = filter.length || (search && search.value) ? filter : data;
+   filter.forEach(element => {
+  galerycon.innerHTML+=`
+  <div class="galerimg">
+  <img src="${element.img}" alt="">
+</div>
+  `
+});
+}
+getall5()
+
+
 
 let load = document.querySelector("#load")
 let show = document.querySelector("#show")
